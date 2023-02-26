@@ -2860,7 +2860,7 @@ void setup(void);
 # 58 "main.c"
 uint8_t iniciostop = 0;
 uint8_t cambio = 0;
-
+uint8_t ENCENDIDO = 0;
 
 
 
@@ -2868,6 +2868,20 @@ uint8_t cambio = 0;
 
 void __attribute__((picinterrupt(("")))) ISR (void){
 
+ if (RBIF == 1){
+    if (PORTBbits.RB0 == 0){
+        _delay((unsigned long)((10)*(8000000/4000.0)));
+        if (PORTBbits.RB0 == 1){
+            if (ENCENDIDO != 0){
+                ENCENDIDO = 0;
+            }
+            else if (ENCENDIDO == 0){
+                ENCENDIDO = 1;
+            }
+            INTCONbits.RBIF = 0;
+        }
+    }
+    }
 }
 
 
@@ -2877,13 +2891,10 @@ void main(void) {
     setup();
 
     while(1){
-
-
-
-
-
-
-
+        I2C_Master_Start();
+        I2C_Master_Write(0x50);
+        I2C_Master_Write(ENCENDIDO);
+        I2C_Master_Stop();
     }
 }
 
@@ -2893,7 +2904,7 @@ void setup(void){
 
     ANSEL = 0;
     ANSELH = 0;
-    TRISB = 0b00000111;
+    TRISB = 0b00000001;
     TRISA = 0;
     TRISD = 0;
 
@@ -2908,11 +2919,8 @@ void setup(void){
     INTCONbits.GIE = 1;
 
     WPUBbits.WPUB0 = 1;
-    WPUBbits.WPUB1 = 1;
     IOCBbits.IOCB0 = 1;
-    IOCBbits.IOCB1 = 1;
-    WPUBbits.WPUB2 = 1;
-    IOCBbits.IOCB2 = 1;
+
 
     OPTION_REGbits.nRBPU = 0;
 

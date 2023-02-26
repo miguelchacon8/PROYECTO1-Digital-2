@@ -11,24 +11,29 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
-$C:\Users\Migue\AppData\Local\Temp\xcAs12no.o
+$C:\Users\Migue\AppData\Local\Temp\xcAs1388.o
 idloc IDLOC 5 2000 2000 4 2 1
 reset_vec CODE 0 0 0 3 2 1
 end_init CODE 0 C C 3 2 1
 config CONFIG 4 2007 2007 2 2 1
 $dist/default/production\MASTER.X.production.o
-cinit CODE 0 F F 6 2 1
+cinit CODE 0 F F 9 2 1
 idloc IDLOC 5 2000 2000 4 2 1
-text1 CODE 0 7D 7D 5F 2 1
-text2 CODE 0 114 114 2C 2 1
-text3 CODE 0 DC DC 38 2 1
-text4 CODE 0 15 15 68 2 1
-text5 CODE 0 14F 14F 7 2 1
-maintext CODE 0 140 140 F 2 1
-cstackCOMMON COMMON 1 70 70 A 1 1
-cstackBANK0 BANK0 1 20 20 E 1 1
+text1 CODE 0 80 80 5F 2 1
+text2 CODE 0 178 178 28 2 1
+text3 CODE 0 DF DF 3A 2 1
+text4 CODE 0 18 18 68 2 1
+text5 CODE 0 1AD 1AD A 2 1
+text6 CODE 0 1B7 1B7 9 2 1
+text7 CODE 0 1C0 1C0 9 2 1
+text8 CODE 0 1A0 1A0 D 2 1
+text9 CODE 0 149 149 2F 2 1
+maintext CODE 0 119 119 30 2 1
+cstackCOMMON COMMON 1 70 70 8 1 1
+cstackBANK0 BANK0 1 20 20 15 1 1
 intentry CODE 0 4 4 8 2 1
-bssCOMMON COMMON 1 7A 7A 2 1 1
+bssBANK0 BANK0 1 35 35 1 1 1
+bssCOMMON COMMON 1 78 78 2 1 1
 config CONFIG 4 2007 2007 2 2 1
 # %UNUSED Section
 # This section enumerates the unused ranges of each CLASS. Each entry
@@ -36,30 +41,30 @@ config CONFIG 4 2007 2007 2 2 1
 #    <class name> <range> <delta>
 # Addresses given in the range are in hexadecimal and units of delta.
 %UNUSED
-RAM 2E-6F 1
+RAM 36-6F 1
 RAM A0-EF 1
 RAM 110-16F 1
 RAM 190-1EF 1
-BANK0 2E-6F 1
+BANK0 36-6F 1
 BANK1 A0-EF 1
 BANK2 110-16F 1
 BANK3 190-1EF 1
 CONST 3-3 2
-CONST 156-1FFF 2
+CONST 1C9-1FFF 2
 ENTRY 3-3 2
-ENTRY 156-1FFF 2
+ENTRY 1C9-1FFF 2
 CODE 3-3 2
-CODE 156-1FFF 2
+CODE 1C9-1FFF 2
 SFR0 0-1F 1
 SFR1 80-9F 1
 SFR2 100-10F 1
 SFR3 180-18F 1
-COMMON 7C-7D 1
+COMMON 7A-7D 1
 EEDATA 2100-21FF 2
 STRCODE 3-3 2
-STRCODE 156-1FFF 2
+STRCODE 1C9-1FFF 2
 STRING 3-3 2
-STRING 156-1FFF 2
+STRING 1C9-1FFF 2
 # %LINETAB Section
 # This section enumerates the file/line to address mappings.
 # The beginning of the section is indicated by %LINETAB.
@@ -74,107 +79,135 @@ STRING 156-1FFF 2
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\MASTER.X.production.o
-F cinit CODE >797:C:\Users\Migue\AppData\Local\Temp\xcAs12no.s
-F cinit CODE >800:C:\Users\Migue\AppData\Local\Temp\xcAs12no.s
-F cinit CODE >814:C:\Users\Migue\AppData\Local\Temp\xcAs12no.s
-10 cinit CODE >815:C:\Users\Migue\AppData\Local\Temp\xcAs12no.s
-11 cinit CODE >821:C:\Users\Migue\AppData\Local\Temp\xcAs12no.s
-11 cinit CODE >823:C:\Users\Migue\AppData\Local\Temp\xcAs12no.s
-12 cinit CODE >824:C:\Users\Migue\AppData\Local\Temp\xcAs12no.s
+F cinit CODE >808:C:\Users\Migue\AppData\Local\Temp\xcAs1388.s
+F cinit CODE >811:C:\Users\Migue\AppData\Local\Temp\xcAs1388.s
+F cinit CODE >831:C:\Users\Migue\AppData\Local\Temp\xcAs1388.s
+10 cinit CODE >832:C:\Users\Migue\AppData\Local\Temp\xcAs1388.s
+11 cinit CODE >835:C:\Users\Migue\AppData\Local\Temp\xcAs1388.s
+12 cinit CODE >836:C:\Users\Migue\AppData\Local\Temp\xcAs1388.s
+13 cinit CODE >837:C:\Users\Migue\AppData\Local\Temp\xcAs1388.s
+14 cinit CODE >843:C:\Users\Migue\AppData\Local\Temp\xcAs1388.s
+14 cinit CODE >845:C:\Users\Migue\AppData\Local\Temp\xcAs1388.s
+15 cinit CODE >846:C:\Users\Migue\AppData\Local\Temp\xcAs1388.s
 4 intentry CODE >66:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\MASTER.X\main.c
-14F text5 CODE >66:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\MASTER.X\main.c
-14F text5 CODE >68:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\MASTER.X\main.c
-15 text4 CODE >5:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
-15 text4 CODE >13:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
-1F text4 CODE >14:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
-23 text4 CODE >14:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
-27 text4 CODE >15:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
-29 text4 CODE >16:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
-2A text4 CODE >17:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
-2C text4 CODE >17:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
-33 text4 CODE >18:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
-37 text4 CODE >16:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
-3B text4 CODE >21:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
-3D text4 CODE >21:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
-44 text4 CODE >22:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
-46 text4 CODE >22:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
-4A text4 CODE >22:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
-4E text4 CODE >22:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
-52 text4 CODE >22:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
-56 text4 CODE >23:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
+149 text9 CODE >66:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\MASTER.X\main.c
+149 text9 CODE >68:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\MASTER.X\main.c
+14D text9 CODE >69:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\MASTER.X\main.c
+153 text9 CODE >70:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\MASTER.X\main.c
+15C text9 CODE >71:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\MASTER.X\main.c
+162 text9 CODE >72:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\MASTER.X\main.c
+167 text9 CODE >73:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\MASTER.X\main.c
+168 text9 CODE >74:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\MASTER.X\main.c
+169 text9 CODE >75:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\MASTER.X\main.c
+16E text9 CODE >76:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\MASTER.X\main.c
+170 text9 CODE >77:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\MASTER.X\main.c
+170 text9 CODE >78:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\MASTER.X\main.c
+171 text9 CODE >82:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\MASTER.X\main.c
+1A0 text8 CODE >32:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1/SLAVE1.X/I2C.c
+1A0 text8 CODE >34:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1/SLAVE1.X/I2C.c
+1AC text8 CODE >35:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1/SLAVE1.X/I2C.c
+1C0 text7 CODE >39:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1/SLAVE1.X/I2C.c
+1C0 text7 CODE >41:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1/SLAVE1.X/I2C.c
+1C5 text7 CODE >42:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1/SLAVE1.X/I2C.c
+1C8 text7 CODE >43:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1/SLAVE1.X/I2C.c
+1B7 text6 CODE >55:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1/SLAVE1.X/I2C.c
+1B7 text6 CODE >57:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1/SLAVE1.X/I2C.c
+1BC text6 CODE >58:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1/SLAVE1.X/I2C.c
+1BF text6 CODE >59:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1/SLAVE1.X/I2C.c
+1AD text5 CODE >65:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1/SLAVE1.X/I2C.c
+1AD text5 CODE >67:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1/SLAVE1.X/I2C.c
+1B2 text5 CODE >68:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1/SLAVE1.X/I2C.c
+1B6 text5 CODE >69:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1/SLAVE1.X/I2C.c
+18 text4 CODE >5:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
+18 text4 CODE >13:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
+22 text4 CODE >14:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
+26 text4 CODE >14:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
+2A text4 CODE >15:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
+2C text4 CODE >16:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
+2D text4 CODE >17:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
+2F text4 CODE >17:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
+36 text4 CODE >18:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
+3A text4 CODE >16:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
+3E text4 CODE >21:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
+40 text4 CODE >21:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
+47 text4 CODE >22:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
+49 text4 CODE >22:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
+4D text4 CODE >22:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
+51 text4 CODE >22:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
+55 text4 CODE >22:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
 59 text4 CODE >23:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
-5D text4 CODE >23:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
-61 text4 CODE >23:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
-64 text4 CODE >24:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
-65 text4 CODE >26:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
-66 text4 CODE >26:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
-6C text4 CODE >26:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
-6E text4 CODE >27:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
-74 text4 CODE >29:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
-7C text4 CODE >30:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
-DC text3 CODE >16:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1/SLAVE1.X/I2C.c
-DC text3 CODE >18:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1/SLAVE1.X/I2C.c
-E0 text3 CODE >19:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1/SLAVE1.X/I2C.c
-E3 text3 CODE >20:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1/SLAVE1.X/I2C.c
-EE text3 CODE >20:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1/SLAVE1.X/I2C.c
-F4 text3 CODE >20:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1/SLAVE1.X/I2C.c
-110 text3 CODE >21:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1/SLAVE1.X/I2C.c
-111 text3 CODE >22:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1/SLAVE1.X/I2C.c
-112 text3 CODE >23:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1/SLAVE1.X/I2C.c
-113 text3 CODE >24:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1/SLAVE1.X/I2C.c
-114 text2 CODE >89:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\MASTER.X\main.c
-114 text2 CODE >91:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\MASTER.X\main.c
-117 text2 CODE >92:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\MASTER.X\main.c
-118 text2 CODE >93:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\MASTER.X\main.c
-11C text2 CODE >94:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\MASTER.X\main.c
-11D text2 CODE >95:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\MASTER.X\main.c
-11E text2 CODE >97:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\MASTER.X\main.c
-121 text2 CODE >98:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\MASTER.X\main.c
-122 text2 CODE >99:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\MASTER.X\main.c
-123 text2 CODE >100:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\MASTER.X\main.c
-124 text2 CODE >103:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\MASTER.X\main.c
-125 text2 CODE >104:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\MASTER.X\main.c
-126 text2 CODE >105:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\MASTER.X\main.c
-127 text2 CODE >107:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\MASTER.X\main.c
-12A text2 CODE >108:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\MASTER.X\main.c
-12B text2 CODE >109:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\MASTER.X\main.c
-12C text2 CODE >110:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\MASTER.X\main.c
-12D text2 CODE >111:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\MASTER.X\main.c
-12E text2 CODE >112:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\MASTER.X\main.c
-12F text2 CODE >114:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\MASTER.X\main.c
-130 text2 CODE >116:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\MASTER.X\main.c
-13F text2 CODE >117:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\MASTER.X\main.c
-7D text1 CODE >10:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1/SLAVE1.X/oscilador.c
-7E text1 CODE >11:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1/SLAVE1.X/oscilador.c
-84 text1 CODE >12:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1/SLAVE1.X/oscilador.c
-88 text1 CODE >13:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1/SLAVE1.X/oscilador.c
-88 text1 CODE >14:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1/SLAVE1.X/oscilador.c
-8E text1 CODE >15:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1/SLAVE1.X/oscilador.c
-94 text1 CODE >16:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1/SLAVE1.X/oscilador.c
-94 text1 CODE >17:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1/SLAVE1.X/oscilador.c
-9A text1 CODE >18:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1/SLAVE1.X/oscilador.c
-A0 text1 CODE >19:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1/SLAVE1.X/oscilador.c
-A0 text1 CODE >20:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1/SLAVE1.X/oscilador.c
-A6 text1 CODE >21:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1/SLAVE1.X/oscilador.c
-AC text1 CODE >22:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1/SLAVE1.X/oscilador.c
-AC text1 CODE >23:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1/SLAVE1.X/oscilador.c
-B2 text1 CODE >24:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1/SLAVE1.X/oscilador.c
-B8 text1 CODE >25:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1/SLAVE1.X/oscilador.c
-B8 text1 CODE >26:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1/SLAVE1.X/oscilador.c
-BE text1 CODE >27:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1/SLAVE1.X/oscilador.c
-C4 text1 CODE >28:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1/SLAVE1.X/oscilador.c
-C4 text1 CODE >29:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1/SLAVE1.X/oscilador.c
-C9 text1 CODE >30:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1/SLAVE1.X/oscilador.c
-CF text1 CODE >31:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1/SLAVE1.X/oscilador.c
-CF text1 CODE >32:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1/SLAVE1.X/oscilador.c
-D4 text1 CODE >33:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1/SLAVE1.X/oscilador.c
-D8 text1 CODE >36:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1/SLAVE1.X/oscilador.c
-DB text1 CODE >37:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1/SLAVE1.X/oscilador.c
-140 maintext CODE >72:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\MASTER.X\main.c
-140 maintext CODE >73:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\MASTER.X\main.c
-146 maintext CODE >74:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\MASTER.X\main.c
-14B maintext CODE >76:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\MASTER.X\main.c
-14B maintext CODE >84:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\MASTER.X\main.c
+5C text4 CODE >23:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
+60 text4 CODE >23:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
+64 text4 CODE >23:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
+67 text4 CODE >24:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
+68 text4 CODE >26:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
+69 text4 CODE >26:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
+6F text4 CODE >26:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
+71 text4 CODE >27:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
+77 text4 CODE >29:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
+7F text4 CODE >30:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
+DF text3 CODE >16:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1/SLAVE1.X/I2C.c
+DF text3 CODE >18:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1/SLAVE1.X/I2C.c
+E3 text3 CODE >19:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1/SLAVE1.X/I2C.c
+E6 text3 CODE >20:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1/SLAVE1.X/I2C.c
+F1 text3 CODE >20:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1/SLAVE1.X/I2C.c
+F7 text3 CODE >20:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1/SLAVE1.X/I2C.c
+115 text3 CODE >21:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1/SLAVE1.X/I2C.c
+116 text3 CODE >22:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1/SLAVE1.X/I2C.c
+117 text3 CODE >23:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1/SLAVE1.X/I2C.c
+118 text3 CODE >24:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1/SLAVE1.X/I2C.c
+178 text2 CODE >100:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\MASTER.X\main.c
+178 text2 CODE >102:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\MASTER.X\main.c
+17B text2 CODE >103:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\MASTER.X\main.c
+17C text2 CODE >104:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\MASTER.X\main.c
+180 text2 CODE >105:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\MASTER.X\main.c
+181 text2 CODE >106:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\MASTER.X\main.c
+182 text2 CODE >108:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\MASTER.X\main.c
+185 text2 CODE >109:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\MASTER.X\main.c
+186 text2 CODE >110:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\MASTER.X\main.c
+187 text2 CODE >111:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\MASTER.X\main.c
+188 text2 CODE >114:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\MASTER.X\main.c
+189 text2 CODE >115:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\MASTER.X\main.c
+18A text2 CODE >116:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\MASTER.X\main.c
+18B text2 CODE >118:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\MASTER.X\main.c
+18E text2 CODE >119:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\MASTER.X\main.c
+18F text2 CODE >122:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\MASTER.X\main.c
+190 text2 CODE >124:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\MASTER.X\main.c
+19F text2 CODE >125:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\MASTER.X\main.c
+80 text1 CODE >10:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1/SLAVE1.X/oscilador.c
+81 text1 CODE >11:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1/SLAVE1.X/oscilador.c
+87 text1 CODE >12:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1/SLAVE1.X/oscilador.c
+8B text1 CODE >13:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1/SLAVE1.X/oscilador.c
+8B text1 CODE >14:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1/SLAVE1.X/oscilador.c
+91 text1 CODE >15:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1/SLAVE1.X/oscilador.c
+97 text1 CODE >16:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1/SLAVE1.X/oscilador.c
+97 text1 CODE >17:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1/SLAVE1.X/oscilador.c
+9D text1 CODE >18:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1/SLAVE1.X/oscilador.c
+A3 text1 CODE >19:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1/SLAVE1.X/oscilador.c
+A3 text1 CODE >20:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1/SLAVE1.X/oscilador.c
+A9 text1 CODE >21:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1/SLAVE1.X/oscilador.c
+AF text1 CODE >22:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1/SLAVE1.X/oscilador.c
+AF text1 CODE >23:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1/SLAVE1.X/oscilador.c
+B5 text1 CODE >24:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1/SLAVE1.X/oscilador.c
+BB text1 CODE >25:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1/SLAVE1.X/oscilador.c
+BB text1 CODE >26:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1/SLAVE1.X/oscilador.c
+C1 text1 CODE >27:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1/SLAVE1.X/oscilador.c
+C7 text1 CODE >28:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1/SLAVE1.X/oscilador.c
+C7 text1 CODE >29:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1/SLAVE1.X/oscilador.c
+CC text1 CODE >30:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1/SLAVE1.X/oscilador.c
+D2 text1 CODE >31:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1/SLAVE1.X/oscilador.c
+D2 text1 CODE >32:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1/SLAVE1.X/oscilador.c
+D7 text1 CODE >33:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1/SLAVE1.X/oscilador.c
+DB text1 CODE >36:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1/SLAVE1.X/oscilador.c
+DE text1 CODE >37:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1/SLAVE1.X/oscilador.c
+119 maintext CODE >86:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\MASTER.X\main.c
+119 maintext CODE >87:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\MASTER.X\main.c
+11F maintext CODE >88:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\MASTER.X\main.c
+124 maintext CODE >90:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\MASTER.X\main.c
+124 maintext CODE >91:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\MASTER.X\main.c
+129 maintext CODE >92:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\MASTER.X\main.c
+132 maintext CODE >93:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\MASTER.X\main.c
+140 maintext CODE >94:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\MASTER.X\main.c
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -188,59 +221,61 @@ DB text1 CODE >37:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1/SLAVE1.X/os
 # is the name of the object file in which the symbol was defined.
 %SYMTAB
 ___latbits 2 0 ABS 0 - dist/default/production\MASTER.X.production.o
-__Hspace_0 156 0 ABS 0 - -
-__Hspace_1 7C 0 ABS 0 - -
+__Hspace_0 1C9 0 ABS 0 - -
+__Hspace_1 7A 0 ABS 0 - -
 __Hspace_2 0 0 ABS 0 - -
 __Hspace_3 0 0 ABS 0 - -
 __Hspace_4 4010 0 ABS 0 - -
-I2C_Master_Init@c 26 0 BANK0 1 cstackBANK0 dist/default/production\MASTER.X.production.o
+I2C_Master_Init@c 2D 0 BANK0 1 cstackBANK0 dist/default/production\MASTER.X.production.o
 __Heeprom_data 0 0 EEDATA 3 eeprom_data -
 __Hstrings 0 0 ABS 0 strings -
 _PEIE 5E 0 ABS 0 - dist/default/production\MASTER.X.production.o
-___sp 0 0 STACK 2 stack C:\Users\Migue\AppData\Local\Temp\xcAs12no.o
-_main 280 0 CODE 0 maintext dist/default/production\MASTER.X.production.o
+_RBIF 58 0 ABS 0 - dist/default/production\MASTER.X.production.o
+___sp 0 0 STACK 2 stack C:\Users\Migue\AppData\Local\Temp\xcAs1388.o
+_main 232 0 CODE 0 maintext dist/default/production\MASTER.X.production.o
 btemp 7E 0 ABS 0 - dist/default/production\MASTER.X.production.o
-start 18 0 CODE 0 init C:\Users\Migue\AppData\Local\Temp\xcAs12no.o
+start 18 0 CODE 0 init C:\Users\Migue\AppData\Local\Temp\xcAs1388.o
 __HbssCOMMON 0 0 ABS 0 bssCOMMON -
 _OPTION_REGbits 81 0 ABS 0 - dist/default/production\MASTER.X.production.o
 __Hpowerup 0 0 CODE 0 powerup -
-intlevel0 0 0 ENTRY 0 functab C:\Users\Migue\AppData\Local\Temp\xcAs12no.o
-intlevel1 0 0 ENTRY 0 functab C:\Users\Migue\AppData\Local\Temp\xcAs12no.o
-intlevel2 0 0 ENTRY 0 functab C:\Users\Migue\AppData\Local\Temp\xcAs12no.o
-intlevel3 0 0 ENTRY 0 functab C:\Users\Migue\AppData\Local\Temp\xcAs12no.o
-intlevel4 0 0 ENTRY 0 functab C:\Users\Migue\AppData\Local\Temp\xcAs12no.o
-intlevel5 0 0 ENTRY 0 functab C:\Users\Migue\AppData\Local\Temp\xcAs12no.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\Migue\AppData\Local\Temp\xcAs1388.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\Migue\AppData\Local\Temp\xcAs1388.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\Migue\AppData\Local\Temp\xcAs1388.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\Migue\AppData\Local\Temp\xcAs1388.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\Migue\AppData\Local\Temp\xcAs1388.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\Migue\AppData\Local\Temp\xcAs1388.o
 __LbssCOMMON 0 0 ABS 0 bssCOMMON -
-_setupINTOSC FA 0 CODE 0 text1 dist/default/production\MASTER.X.production.o
+_setupINTOSC 100 0 CODE 0 text1 dist/default/production\MASTER.X.production.o
 _OSCCONbits 8F 0 ABS 0 - dist/default/production\MASTER.X.production.o
 wtemp0 7E 0 ABS 0 - dist/default/production\MASTER.X.production.o
 __Hfunctab 0 0 ENTRY 0 functab -
-setupINTOSC@IRCF 72 0 COMMON 1 cstackCOMMON dist/default/production\MASTER.X.production.o
+setupINTOSC@IRCF 74 0 COMMON 1 cstackCOMMON dist/default/production\MASTER.X.production.o
 __Hclrtext 0 0 ABS 0 clrtext -
 _ANSELH 189 0 ABS 0 - dist/default/production\MASTER.X.production.o
 __Lmaintext 0 0 ABS 0 maintext -
-__end_of___lldiv FA 0 CODE 0 text4 dist/default/production\MASTER.X.production.o
-___stackhi 0 0 ABS 0 - C:\Users\Migue\AppData\Local\Temp\xcAs12no.o
-___stacklo 0 0 ABS 0 - C:\Users\Migue\AppData\Local\Temp\xcAs12no.o
-___lldiv@counter 25 0 BANK0 1 cstackBANK0 dist/default/production\MASTER.X.production.o
+__end_of___lldiv 100 0 CODE 0 text4 dist/default/production\MASTER.X.production.o
+___stackhi 0 0 ABS 0 - C:\Users\Migue\AppData\Local\Temp\xcAs1388.o
+___stacklo 0 0 ABS 0 - C:\Users\Migue\AppData\Local\Temp\xcAs1388.o
+___lldiv@counter 2C 0 BANK0 1 cstackBANK0 dist/default/production\MASTER.X.production.o
 _WPUBbits 95 0 ABS 0 - dist/default/production\MASTER.X.production.o
 start_initialization 1E 0 CODE 0 cinit dist/default/production\MASTER.X.production.o
 _TRISCbits 87 0 ABS 0 - dist/default/production\MASTER.X.production.o
-___lldiv@dividend 76 0 COMMON 1 cstackCOMMON dist/default/production\MASTER.X.production.o
+___lldiv@dividend 24 0 BANK0 1 cstackBANK0 dist/default/production\MASTER.X.production.o
 __pcstackBANK0 20 0 BANK0 1 cstackBANK0 dist/default/production\MASTER.X.production.o
 _SSPADD 93 0 ABS 0 - dist/default/production\MASTER.X.production.o
 _SSPBUF 13 0 ABS 0 - dist/default/production\MASTER.X.production.o
 _SSPCON 14 0 ABS 0 - dist/default/production\MASTER.X.production.o
 _TRISC3 43B 0 ABS 0 - dist/default/production\MASTER.X.production.o
 _TRISC4 43C 0 ABS 0 - dist/default/production\MASTER.X.production.o
-___int_sp 0 0 STACK 2 stack C:\Users\Migue\AppData\Local\Temp\xcAs12no.o
+___int_sp 0 0 STACK 2 stack C:\Users\Migue\AppData\Local\Temp\xcAs1388.o
 __Hbank0 0 0 ABS 0 bank0 -
 __Hbank1 0 0 ABS 0 bank1 -
 __Hbank2 0 0 ABS 0 bank2 -
 __Hbank3 0 0 ABS 0 bank3 -
-__Hcinit 2A 0 CODE 0 cinit -
+__Hcinit 30 0 CODE 0 cinit -
 __Hidloc 4008 0 IDLOC 5 idloc -
 __Hstack 0 0 STACK 2 stack -
+I2C_Master_Write@d 74 0 COMMON 1 cstackCOMMON dist/default/production\MASTER.X.production.o
 __Hmaintext 0 0 ABS 0 maintext -
 __Hcommon 0 0 ABS 0 common -
 __Hconfig 4012 0 CONFIG 4 config -
@@ -251,6 +286,7 @@ __Lbank3 0 0 ABS 0 bank3 -
 __Lcinit 1E 0 CODE 0 cinit -
 __Lidloc 0 0 IDLOC 5 idloc -
 __Lstack 0 0 STACK 2 stack -
+_PORTBbits 6 0 ABS 0 - dist/default/production\MASTER.X.production.o
 _INTCONbits B 0 ABS 0 - dist/default/production\MASTER.X.production.o
 __Habs1 0 0 ABS 0 abs1 -
 __Hcode 0 0 ABS 0 code -
@@ -271,54 +307,69 @@ __Ltext 0 0 ABS 0 text -
 __LcstackBANK0 0 0 ABS 0 cstackBANK0 -
 __HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
 _GIE 5F 0 ABS 0 - dist/default/production\MASTER.X.production.o
-_ISR 29E 0 CODE 0 text5 dist/default/production\MASTER.X.production.o
-__S0 156 0 ABS 0 - -
-__S1 7C 0 ABS 0 - -
+_ISR 292 0 CODE 0 text9 dist/default/production\MASTER.X.production.o
+__S0 1C9 0 ABS 0 - -
+__S1 7A 0 ABS 0 - -
 __S3 0 0 ABS 0 - -
 saved_w 7E 0 ABS 0 - dist/default/production\MASTER.X.production.o
-__end_of_setupINTOSC 1B8 0 CODE 0 text1 dist/default/production\MASTER.X.production.o
-__end_of_ISR 2AC 0 CODE 0 text5 dist/default/production\MASTER.X.production.o
+_I2C_Master_Start 380 0 CODE 0 text7 dist/default/production\MASTER.X.production.o
+_I2C_Master_Write 35A 0 CODE 0 text5 dist/default/production\MASTER.X.production.o
+__end_of_setupINTOSC 1BE 0 CODE 0 text1 dist/default/production\MASTER.X.production.o
+__end_of_ISR 2F0 0 CODE 0 text9 dist/default/production\MASTER.X.production.o
 __Lintentry 8 0 CODE 0 intentry -
-___lldiv@divisor 72 0 COMMON 1 cstackCOMMON dist/default/production\MASTER.X.production.o
-reset_vec 0 0 CODE 0 reset_vec C:\Users\Migue\AppData\Local\Temp\xcAs12no.o
-___lldiv 2A 0 CODE 0 text4 dist/default/production\MASTER.X.production.o
-__pmaintext 280 0 CODE 0 maintext dist/default/production\MASTER.X.production.o
+___lldiv@divisor 20 0 BANK0 1 cstackBANK0 dist/default/production\MASTER.X.production.o
+reset_vec 0 0 CODE 0 reset_vec C:\Users\Migue\AppData\Local\Temp\xcAs1388.o
+__LbssBANK0 0 0 ABS 0 bssBANK0 -
+___lldiv 30 0 CODE 0 text4 dist/default/production\MASTER.X.production.o
+__pmaintext 232 0 CODE 0 maintext dist/default/production\MASTER.X.production.o
 __Lcommon 0 0 ABS 0 common -
 __Lconfig 0 0 CONFIG 4 config -
-__end_of_I2C_Master_Init 228 0 CODE 0 text3 dist/default/production\MASTER.X.production.o
+__end_of_I2C_Master_Init 232 0 CODE 0 text3 dist/default/production\MASTER.X.production.o
+__end_of_I2C_Master_Stop 380 0 CODE 0 text6 dist/default/production\MASTER.X.production.o
+__end_of_I2C_Master_Wait 35A 0 CODE 0 text8 dist/default/production\MASTER.X.production.o
+__end_of_I2C_Master_Start 392 0 CODE 0 text7 dist/default/production\MASTER.X.production.o
 __Lspace_0 0 0 ABS 0 - -
 __Lspace_1 0 0 ABS 0 - -
 __Lspace_2 0 0 ABS 0 - -
 __Lspace_3 0 0 ABS 0 - -
 __Lspace_4 0 0 ABS 0 - -
-__pbssCOMMON 7A 0 COMMON 1 bssCOMMON dist/default/production\MASTER.X.production.o
+__end_of_I2C_Master_Write 36E 0 CODE 0 text5 dist/default/production\MASTER.X.production.o
+__pbssCOMMON 78 0 COMMON 1 bssCOMMON dist/default/production\MASTER.X.production.o
 __HcstackBANK0 0 0 ABS 0 cstackBANK0 -
 __Lend_init 18 0 CODE 0 end_init -
 __LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
-end_of_initialization 22 0 CODE 0 cinit dist/default/production\MASTER.X.production.o
+end_of_initialization 28 0 CODE 0 cinit dist/default/production\MASTER.X.production.o
 __Hintentry 18 0 CODE 0 intentry -
 __Lstrings 0 0 ABS 0 strings -
-?___lldiv 72 0 COMMON 1 cstackCOMMON dist/default/production\MASTER.X.production.o
+?___lldiv 20 0 BANK0 1 cstackBANK0 dist/default/production\MASTER.X.production.o
 __Hreset_vec 6 0 CODE 0 reset_vec -
+__HbssBANK0 0 0 ABS 0 bssBANK0 -
 _SSPCON2bits 91 0 ABS 0 - dist/default/production\MASTER.X.production.o
-__ptext1 FA 0 CODE 0 text1 dist/default/production\MASTER.X.production.o
-__ptext2 228 0 CODE 0 text2 dist/default/production\MASTER.X.production.o
-__ptext3 1B8 0 CODE 0 text3 dist/default/production\MASTER.X.production.o
-__ptext4 2A 0 CODE 0 text4 dist/default/production\MASTER.X.production.o
-__ptext5 29E 0 CODE 0 text5 dist/default/production\MASTER.X.production.o
+__ptext1 100 0 CODE 0 text1 dist/default/production\MASTER.X.production.o
+__ptext2 2F0 0 CODE 0 text2 dist/default/production\MASTER.X.production.o
+__ptext3 1BE 0 CODE 0 text3 dist/default/production\MASTER.X.production.o
+__ptext4 30 0 CODE 0 text4 dist/default/production\MASTER.X.production.o
+__ptext5 35A 0 CODE 0 text5 dist/default/production\MASTER.X.production.o
+__ptext6 36E 0 CODE 0 text6 dist/default/production\MASTER.X.production.o
+__ptext7 380 0 CODE 0 text7 dist/default/production\MASTER.X.production.o
+__ptext8 340 0 CODE 0 text8 dist/default/production\MASTER.X.production.o
+__ptext9 292 0 CODE 0 text9 dist/default/production\MASTER.X.production.o
 __Lpowerup 0 0 CODE 0 powerup -
 __Leeprom_data 0 0 EEDATA 3 eeprom_data -
-_I2C_Master_Init 1B8 0 CODE 0 text3 dist/default/production\MASTER.X.production.o
+_I2C_Master_Init 1BE 0 CODE 0 text3 dist/default/production\MASTER.X.production.o
+_I2C_Master_Stop 36E 0 CODE 0 text6 dist/default/production\MASTER.X.production.o
+_I2C_Master_Wait 340 0 CODE 0 text8 dist/default/production\MASTER.X.production.o
 __Lreset_vec 0 0 CODE 0 reset_vec -
-__end_of__initialization 22 0 CODE 0 cinit dist/default/production\MASTER.X.production.o
+__end_of__initialization 28 0 CODE 0 cinit dist/default/production\MASTER.X.production.o
 __Lfunctab 0 0 ENTRY 0 functab -
 __Lclrtext 0 0 ABS 0 clrtext -
-___lldiv@quotient 21 0 BANK0 1 cstackBANK0 dist/default/production\MASTER.X.production.o
+___lldiv@quotient 28 0 BANK0 1 cstackBANK0 dist/default/production\MASTER.X.production.o
 __pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production\MASTER.X.production.o
+_ENCENDIDO 35 0 BANK0 1 bssBANK0 dist/default/production\MASTER.X.production.o
 _SSPCON2 91 0 ABS 0 - dist/default/production\MASTER.X.production.o
 _SSPSTAT 94 0 ABS 0 - dist/default/production\MASTER.X.production.o
 __Hend_init 1E 0 CODE 0 end_init -
-__end_of_main 29E 0 CODE 0 maintext dist/default/production\MASTER.X.production.o
+__end_of_main 292 0 CODE 0 maintext dist/default/production\MASTER.X.production.o
 _ANSEL 188 0 ABS 0 - dist/default/production\MASTER.X.production.o
 _PORTA 5 0 ABS 0 - dist/default/production\MASTER.X.production.o
 _PORTB 6 0 ABS 0 - dist/default/production\MASTER.X.production.o
@@ -329,14 +380,15 @@ _SSPIF 63 0 ABS 0 - dist/default/production\MASTER.X.production.o
 _TRISA 85 0 ABS 0 - dist/default/production\MASTER.X.production.o
 _TRISB 86 0 ABS 0 - dist/default/production\MASTER.X.production.o
 _TRISD 88 0 ABS 0 - dist/default/production\MASTER.X.production.o
-__end_of_setup 280 0 CODE 0 text2 dist/default/production\MASTER.X.production.o
+__end_of_setup 340 0 CODE 0 text2 dist/default/production\MASTER.X.production.o
 __Hram 0 0 ABS 0 ram -
 __Lram 0 0 ABS 0 ram -
 interrupt_function 8 0 CODE 0 intentry dist/default/production\MASTER.X.production.o
 _IOCBbits 96 0 ABS 0 - dist/default/production\MASTER.X.production.o
-_setup 228 0 CODE 0 text2 dist/default/production\MASTER.X.production.o
+_setup 2F0 0 CODE 0 text2 dist/default/production\MASTER.X.production.o
 __pintentry 8 0 CODE 0 intentry dist/default/production\MASTER.X.production.o
 __initialization 1E 0 CODE 0 cinit dist/default/production\MASTER.X.production.o
+__pbssBANK0 35 0 BANK0 1 bssBANK0 dist/default/production\MASTER.X.production.o
 # %SPLITSTAB Section
 # This section enumerates all the psect splits performed by the assembler.
 # The beginning of the section is indicated by %SPLITSTAB.
@@ -362,9 +414,9 @@ __initialization 1E 0 CODE 0 cinit dist/default/production\MASTER.X.production.o
 # and size are in units of delta. The file address is in units of bytes.
 # All other numeric quantities are in decimal.
 %SEGMENTS
-cstackCOMMON 1 70 70 C 1
-cstackBANK0 1 20 20 E 1
-intentry 0 4 8 152 2
+cstackCOMMON 1 70 70 A 1
+cstackBANK0 1 20 20 16 1
+intentry 0 4 8 1C5 2
 reset_vec 0 0 0 3 2
 # %NOTES Section
 # This section contains data of all the note-psects.  The beginning of the section

@@ -53,37 +53,10 @@ const uint32_t pwmFreq = 5000;
 //*****************************************************************************
 void setup(void);
 void setupPWM(void);                //setup del primer pwm
+uint32_t pwmMaxDuty(const uint32_t freq);
+void initPwm(const uint32_t freq);
+void applyPWMDutyCycle(uint16_t dutyCycle, const uint32_t freq);
 
-//void delay(unsigned int micro); //delay para servos
-//void setupTMR0(void);               //setup del tmr0
-
-// CCP1 module is used here to generate the required PWM
-// Timer2 module is used to generate the PWM
-// This PWM has 10bit resolution
-//max Duty 
-uint32_t pwmMaxDuty(const uint32_t freq)
-{
-  return(_XTAL_FREQ/(freq*TMR2PRESCALE));
-}
-//Calculate the PR2 value
-void initPwm(const uint32_t freq)
-{
-    //calculate period register value
-    PR2 = (uint8_t)((_XTAL_FREQ/(freq*4*TMR2PRESCALE)) - 1);
-}
-
-//Give a value in between 0 and 1024 for duty-cycle
-void applyPWMDutyCycle(uint16_t dutyCycle, const uint32_t freq)
-{
-    if(dutyCycle<1024)
-    {
-        //1023 because 10 bit resolution
-        dutyCycle = (uint16_t)(((float)dutyCycle/1023)*pwmMaxDuty(freq));
-        CCP1CON &= 0xCF;                 // Make bit4 and 5 zero (Store fraction part of duty cycle)
-        CCP1CON |= (0x30&(dutyCycle<<4)); // Assign Last 2 LSBs to CCP1CON
-        CCPR1L = (uint8_t)(dutyCycle>>2); // Put MSB 8 bits in CCPR1L
-    }
-}
 //*****************************************************************************
 // Código de Interrupción 
 //*****************************************************************************
@@ -122,26 +95,7 @@ void __interrupt() isr(void){
         PIR1bits.SSPIF = 0;    
     }
    
-//    //Modificación de valor PWM
-//   	if (RBIF == 1){
-//    if (PORTBbits.RB0 == 0)
-//    {
-//        __delay_ms(10);
-//        if (PORTBbits.RB0 == 1){ //incremento el puerto
-//            //ADC_RES++;
-//            //dutycycle = dutycycle + 20;
-//            //dutycycle = ADC;
-//            INTCONbits.RBIF = 0;
-//        }
-//    }
-//    else if (PORTBbits.RB1 == 0){
-//        __delay_ms(10);
-//        if (PORTBbits.RB1 == 1){
-//            //dutycycle = dutycycle - 20;
-//            INTCONbits.RBIF = 0;
-//		}
-//    }
-//    }
+
 }
 //*****************************************************************************
 // Main
@@ -157,33 +111,24 @@ void main(void) {
     //*************************************************************************
     // Loop infinito
     //*************************************************************************
-    while(1){
-        PORTCbits.RC0 = 0;
-        PORTCbits.RC1 = 1;
-        ADC = ADC_read(0);
-        dutycycle = 4*ADC;
-
-        if (dutycycle != dutyCycleApply){
-            applyPWMDutyCycle(dutycycle,pwmFreq);
-            dutyCycleApply = dutycycle;
+    while(1){        
+        if (z == 1){
+            PORTDbits.RD0 = 0;
+            PORTDbits.RD1 = 1;
+            ADC = ADC_read(0);
+            dutycycle = 4*ADC;
+            if (dutycycle != dutyCycleApply){
+                applyPWMDutyCycle(dutycycle,pwmFreq);
+                dutyCycleApply = dutycycle;
+            }  
         }
-        
-        if (dutycycle < 0){
+        else if (z == 0){
             dutycycle = 0;
-        }
-        else if (dutycycle >1023){
-            dutycycle = 1023;
-        }
-//        
-//        
-//        ADC_RES = ADC_read(0);
-//        PORTD = ADC_RES;
-//        ADC_RES = ((ADRESH<<2)+(ADRESL>>6)); // le mapeo los valores
-//        valDC = (0.033*ADC_RES+32);
-//        valDCL = valDC & 0x003;
-//        valDCH = (valDC & 0x3FC) >> 2;
-//        CCP1CONbits.DC1B = valDCL;        // CCPxCON<5:4>
-//        CCPR1L = valDCH;  //asigno el valor para el PWM      
+            if (dutycycle != dutyCycleApply){
+                applyPWMDutyCycle(dutycycle,pwmFreq);
+                dutyCycleApply = dutycycle; 
+            }  
+        }    
     }   
     return;
 }
@@ -195,7 +140,7 @@ void setup(void){
     ANSELH = 0;
 
     
-    TRISB = 0b00000111;
+    TRISB = 0b00000000;
     TRISD = 0;
     
     PORTB = 0;
@@ -203,19 +148,8 @@ void setup(void){
     PORTD = 0;
     
     //Interrupciones
-//    INTCONbits.RBIE = 1; 
-//    INTCONbits.RBIF = 0;
     INTCONbits.GIE = 1; //interrupciones globales
-    
-//    WPUBbits.WPUB0 = 1; //inputs
-//    WPUBbits.WPUB1 = 1;
-//    IOCBbits.IOCB0 = 1; //inputs
-//    IOCBbits.IOCB1 = 1;
-//    WPUBbits.WPUB2 = 1;
-//    IOCBbits.IOCB2 = 1; //inputs
-//  
-//    
-//    OPTION_REGbits.nRBPU = 0; //no RBPU, habilitan los pullups internos
+
     I2C_Slave_Init(0x50);   
 }
 
@@ -238,3 +172,26 @@ void setupPWM(void){
     TRISCbits.TRISC2 = 0;// Habilitamos la salida del PWM   
 }
 
+uint32_t pwmMaxDuty(const uint32_t freq)
+{
+  return(_XTAL_FREQ/(freq*TMR2PRESCALE));
+}
+//Calculate the PR2 value
+void initPwm(const uint32_t freq)
+{
+    //calculate period register value
+    PR2 = (uint8_t)((_XTAL_FREQ/(freq*4*TMR2PRESCALE)) - 1);
+}
+
+//Give a value in between 0 and 1024 for duty-cycle
+void applyPWMDutyCycle(uint16_t dutyCycle, const uint32_t freq)
+{
+    if(dutyCycle<1024)
+    {
+        //1023 because 10 bit resolution
+        dutyCycle = (uint16_t)(((float)dutyCycle/1023)*pwmMaxDuty(freq));
+        CCP1CON &= 0xCF;                 // Make bit4 and 5 zero (Store fraction part of duty cycle)
+        CCP1CON |= (0x30&(dutyCycle<<4)); // Assign Last 2 LSBs to CCP1CON
+        CCPR1L = (uint8_t)(dutyCycle>>2); // Put MSB 8 bits in CCPR1L
+    }
+}

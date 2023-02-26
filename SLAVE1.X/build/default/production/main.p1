@@ -1,16 +1,7 @@
 Version 4.0 HI-TECH Software Intermediate Code
-"2042 C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f887.h
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f887.h: 2042: extern volatile unsigned char PR2 __attribute__((address(0x092)));
-[v _PR2 `Vuc ~T0 @X0 0 e@146 ]
-"942
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f887.h: 942: extern volatile unsigned char CCP1CON __attribute__((address(0x017)));
-[v _CCP1CON `Vuc ~T0 @X0 0 e@23 ]
-"928
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f887.h: 928: extern volatile unsigned char CCPR1L __attribute__((address(0x015)));
-[v _CCPR1L `Vuc ~T0 @X0 0 e@21 ]
 [t ~ __interrupt . k ]
 [t T1 __interrupt ]
-"544
+"544 C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f887.h
 [; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f887.h: 544:     struct {
 [s S19 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S19 . TMR1IF TMR2IF CCP1IF SSPIF TXIF RCIF ADIF ]
@@ -91,20 +82,26 @@ Version 4.0 HI-TECH Software Intermediate Code
 "55
 [; ;main.c: 55: void setupPWM(void);
 [v _setupPWM `(v ~T0 @X0 0 ef ]
+"57
+[; ;main.c: 57: void initPwm(const uint32_t freq);
+[v _initPwm `(v ~T0 @X0 0 ef1`Cul ]
+"58
+[; ;main.c: 58: void applyPWMDutyCycle(uint16_t dutyCycle, const uint32_t freq);
+[v _applyPWMDutyCycle `(v ~T0 @X0 0 ef2`ui`Cul ]
 "20 ./setupADC.h
 [; ;./setupADC.h: 20: void ADC_config(int channel);
 [v _ADC_config `(v ~T0 @X0 0 ef1`i ]
-"297 C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f887.h
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f887.h: 297:     struct {
-[s S10 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S10 . RC0 RC1 RC2 RC3 RC4 RC5 RC6 RC7 ]
-"296
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f887.h: 296: typedef union {
-[u S9 `S10 1 ]
-[n S9 . . ]
-"308
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f887.h: 308: extern volatile PORTCbits_t PORTCbits __attribute__((address(0x007)));
-[v _PORTCbits `VS9 ~T0 @X0 0 e@7 ]
+"359 C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f887.h
+[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f887.h: 359:     struct {
+[s S12 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S12 . RD0 RD1 RD2 RD3 RD4 RD5 RD6 RD7 ]
+"358
+[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f887.h: 358: typedef union {
+[u S11 `S12 1 ]
+[n S11 . . ]
+"370
+[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f887.h: 370: extern volatile PORTDbits_t PORTDbits __attribute__((address(0x008)));
+[v _PORTDbits `VS11 ~T0 @X0 0 e@8 ]
 "21 ./setupADC.h
 [; ;./setupADC.h: 21: uint16_t ADC_read(int channel);
 [v _ADC_read `(ui ~T0 @X0 0 ef1`i ]
@@ -158,6 +155,9 @@ Version 4.0 HI-TECH Software Intermediate Code
 "1558
 [; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f887.h: 1558: extern volatile TRISCbits_t TRISCbits __attribute__((address(0x087)));
 [v _TRISCbits `VS56 ~T0 @X0 0 e@135 ]
+"942
+[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f887.h: 942: extern volatile unsigned char CCP1CON __attribute__((address(0x017)));
+[v _CCP1CON `Vuc ~T0 @X0 0 e@23 ]
 "4387
 [; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f887.h: 4387: extern volatile __bit TMR2IF __attribute__((address(0x61)));
 [v _TMR2IF `Vb ~T0 @X0 0 e@97 ]
@@ -179,6 +179,12 @@ Version 4.0 HI-TECH Software Intermediate Code
 "4390
 [; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f887.h: 4390: extern volatile __bit TMR2ON __attribute__((address(0x92)));
 [v _TMR2ON `Vb ~T0 @X0 0 e@146 ]
+"2042
+[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f887.h: 2042: extern volatile unsigned char PR2 __attribute__((address(0x092)));
+[v _PR2 `Vuc ~T0 @X0 0 e@146 ]
+"928
+[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f887.h: 928: extern volatile unsigned char CCPR1L __attribute__((address(0x015)));
+[v _CCPR1L `Vuc ~T0 @X0 0 e@21 ]
 "6 main.c
 [; ;main.c: 6: 
 [p x FOSC  =  INTRC_NOCLKOUT ]
@@ -480,359 +486,359 @@ Version 4.0 HI-TECH Software Intermediate Code
 [i _pwmFreq
 -> -> -> 5000 `i `l `ul
 ]
-"64
-[; ;main.c: 64: uint32_t pwmMaxDuty(const uint32_t freq)
-[v _pwmMaxDuty `(ul ~T0 @X0 1 ef1`Cul ]
-"65
-[; ;main.c: 65: {
-{
-[e :U _pwmMaxDuty ]
-"64
-[; ;main.c: 64: uint32_t pwmMaxDuty(const uint32_t freq)
-[v _freq `Cul ~T0 @X0 1 r1 ]
-"65
-[; ;main.c: 65: {
-[f ]
-"66
-[; ;main.c: 66:   return(2000000/(freq*4));
-[e ) / -> -> 2000000 `l `ul * _freq -> -> -> 4 `i `l `ul ]
-[e $UE 138  ]
-"67
-[; ;main.c: 67: }
-[e :UE 138 ]
-}
-"69
-[; ;main.c: 69: void initPwm(const uint32_t freq)
-[v _initPwm `(v ~T0 @X0 1 ef1`Cul ]
-"70
-[; ;main.c: 70: {
-{
-[e :U _initPwm ]
-"69
-[; ;main.c: 69: void initPwm(const uint32_t freq)
-[v _freq `Cul ~T0 @X0 1 r1 ]
-"70
-[; ;main.c: 70: {
-[f ]
-"72
-[; ;main.c: 72:     PR2 = (uint8_t)((2000000/(freq*4*4)) - 1);
-[e = _PR2 -> - / -> -> 2000000 `l `ul * * _freq -> -> -> 4 `i `l `ul -> -> -> 4 `i `l `ul -> -> -> 1 `i `l `ul `uc ]
-"73
-[; ;main.c: 73: }
-[e :UE 139 ]
-}
-"76
-[; ;main.c: 76: void applyPWMDutyCycle(uint16_t dutyCycle, const uint32_t freq)
-[v _applyPWMDutyCycle `(v ~T0 @X0 1 ef2`ui`Cul ]
-"77
-[; ;main.c: 77: {
-{
-[e :U _applyPWMDutyCycle ]
-"76
-[; ;main.c: 76: void applyPWMDutyCycle(uint16_t dutyCycle, const uint32_t freq)
-[v _dutyCycle `ui ~T0 @X0 1 r1 ]
-[v _freq `Cul ~T0 @X0 1 r2 ]
-"77
-[; ;main.c: 77: {
-[f ]
-"78
-[; ;main.c: 78:     if(dutyCycle<1024)
-[e $ ! < _dutyCycle -> -> 1024 `i `ui 141  ]
-"79
-[; ;main.c: 79:     {
-{
-"81
-[; ;main.c: 81:         dutyCycle = (uint16_t)(((float)dutyCycle/1023)*pwmMaxDuty(freq));
-[e = _dutyCycle -> * / -> _dutyCycle `f -> -> 1023 `i `f -> ( _pwmMaxDuty (1 _freq `f `ui ]
-"82
-[; ;main.c: 82:         CCP1CON &= 0xCF;
-[e =& _CCP1CON -> -> 207 `i `Vuc ]
-"83
-[; ;main.c: 83:         CCP1CON |= (0x30&(dutyCycle<<4));
-[e =| _CCP1CON -> & -> -> 48 `i `ui << _dutyCycle -> 4 `i `Vuc ]
-"84
-[; ;main.c: 84:         CCPR1L = (uint8_t)(dutyCycle>>2);
-[e = _CCPR1L -> >> _dutyCycle -> 2 `i `uc ]
-"85
-[; ;main.c: 85:     }
-}
-[e :U 141 ]
-"86
-[; ;main.c: 86: }
-[e :UE 140 ]
-}
 [v $root$_isr `(v ~T0 @X0 0 e ]
-"90
-[; ;main.c: 90: void __attribute__((picinterrupt(("")))) isr(void){
+"71
+[; ;main.c: 71: void __attribute__((picinterrupt(("")))) isr(void){
 [v _isr `(v ~T1 @X0 1 ef ]
 {
 [e :U _isr ]
 [f ]
-"91
-[; ;main.c: 91:    if(PIR1bits.SSPIF == 1){
-[e $ ! == -> . . _PIR1bits 0 3 `i -> 1 `i 143  ]
+"72
+[; ;main.c: 72:    if(PIR1bits.SSPIF == 1){
+[e $ ! == -> . . _PIR1bits 0 3 `i -> 1 `i 139  ]
 {
-"93
-[; ;main.c: 93:         SSPCONbits.CKP = 0;
+"74
+[; ;main.c: 74:         SSPCONbits.CKP = 0;
 [e = . . _SSPCONbits 0 1 -> -> 0 `i `uc ]
-"95
-[; ;main.c: 95:         if ((SSPCONbits.SSPOV) || (SSPCONbits.WCOL)){
-[e $ ! || != -> . . _SSPCONbits 0 3 `i -> 0 `i != -> . . _SSPCONbits 0 4 `i -> 0 `i 144  ]
+"76
+[; ;main.c: 76:         if ((SSPCONbits.SSPOV) || (SSPCONbits.WCOL)){
+[e $ ! || != -> . . _SSPCONbits 0 3 `i -> 0 `i != -> . . _SSPCONbits 0 4 `i -> 0 `i 140  ]
 {
-"96
-[; ;main.c: 96:             z = SSPBUF;
+"77
+[; ;main.c: 77:             z = SSPBUF;
 [e = _z _SSPBUF ]
-"97
-[; ;main.c: 97:             SSPCONbits.SSPOV = 0;
+"78
+[; ;main.c: 78:             SSPCONbits.SSPOV = 0;
 [e = . . _SSPCONbits 0 3 -> -> 0 `i `uc ]
-"98
-[; ;main.c: 98:             SSPCONbits.WCOL = 0;
+"79
+[; ;main.c: 79:             SSPCONbits.WCOL = 0;
 [e = . . _SSPCONbits 0 4 -> -> 0 `i `uc ]
-"99
-[; ;main.c: 99:             SSPCONbits.CKP = 1;
+"80
+[; ;main.c: 80:             SSPCONbits.CKP = 1;
 [e = . . _SSPCONbits 0 1 -> -> 1 `i `uc ]
-"100
-[; ;main.c: 100:         }
+"81
+[; ;main.c: 81:         }
 }
-[e :U 144 ]
-"102
-[; ;main.c: 102:         if(!SSPSTATbits.D_nA && !SSPSTATbits.R_nW) {
-[e $ ! && ! != -> . . _SSPSTATbits 0 5 `i -> 0 `i ! != -> . . _SSPSTATbits 0 2 `i -> 0 `i 145  ]
+[e :U 140 ]
+"83
+[; ;main.c: 83:         if(!SSPSTATbits.D_nA && !SSPSTATbits.R_nW) {
+[e $ ! && ! != -> . . _SSPSTATbits 0 5 `i -> 0 `i ! != -> . . _SSPSTATbits 0 2 `i -> 0 `i 141  ]
 {
-"104
-[; ;main.c: 104:             z = SSPBUF;
+"85
+[; ;main.c: 85:             z = SSPBUF;
 [e = _z _SSPBUF ]
-"106
-[; ;main.c: 106:             PIR1bits.SSPIF = 0;
+"87
+[; ;main.c: 87:             PIR1bits.SSPIF = 0;
 [e = . . _PIR1bits 0 3 -> -> 0 `i `uc ]
-"107
-[; ;main.c: 107:             SSPCONbits.CKP = 1;
+"88
+[; ;main.c: 88:             SSPCONbits.CKP = 1;
 [e = . . _SSPCONbits 0 1 -> -> 1 `i `uc ]
-"108
-[; ;main.c: 108:             while(!SSPSTATbits.BF);
-[e $U 146  ]
-[e :U 147 ]
-[e :U 146 ]
-[e $ ! != -> . . _SSPSTATbits 0 0 `i -> 0 `i 147  ]
-[e :U 148 ]
-"109
-[; ;main.c: 109:             z = SSPBUF;
-[e = _z _SSPBUF ]
-"110
-[; ;main.c: 110:             dato = SSPBUF;
-[e = _dato _SSPBUF ]
-"111
-[; ;main.c: 111:             _delay((unsigned long)((250)*(2000000/4000000.0)));
-[e ( __delay (1 -> * -> -> 250 `i `d / -> -> 2000000 `l `d .4000000.0 `ul ]
-"113
-[; ;main.c: 113:         }else if(!SSPSTATbits.D_nA && SSPSTATbits.R_nW){
-}
-[e $U 149  ]
-[e :U 145 ]
-[e $ ! && ! != -> . . _SSPSTATbits 0 5 `i -> 0 `i != -> . . _SSPSTATbits 0 2 `i -> 0 `i 150  ]
-{
-"114
-[; ;main.c: 114:             z = SSPBUF;
-[e = _z _SSPBUF ]
-"115
-[; ;main.c: 115:             BF = 0;
-[e = _BF -> -> 0 `i `b ]
-"116
-[; ;main.c: 116:             SSPBUF = ADC;
-[e = _SSPBUF _ADC ]
-"117
-[; ;main.c: 117:             SSPCONbits.CKP = 1;
-[e = . . _SSPCONbits 0 1 -> -> 1 `i `uc ]
-"118
-[; ;main.c: 118:             _delay((unsigned long)((250)*(2000000/4000000.0)));
-[e ( __delay (1 -> * -> -> 250 `i `d / -> -> 2000000 `l `d .4000000.0 `ul ]
-"119
-[; ;main.c: 119:             while(SSPSTATbits.BF);
-[e $U 151  ]
-[e :U 152 ]
-[e :U 151 ]
-[e $ != -> . . _SSPSTATbits 0 0 `i -> 0 `i 152  ]
-[e :U 153 ]
-"120
-[; ;main.c: 120:         }
-}
-[e :U 150 ]
-[e :U 149 ]
-"122
-[; ;main.c: 122:         PIR1bits.SSPIF = 0;
-[e = . . _PIR1bits 0 3 -> -> 0 `i `uc ]
-"123
-[; ;main.c: 123:     }
-}
+"89
+[; ;main.c: 89:             while(!SSPSTATbits.BF);
+[e $U 142  ]
 [e :U 143 ]
-"145
-[; ;main.c: 145: }
-[e :UE 142 ]
+[e :U 142 ]
+[e $ ! != -> . . _SSPSTATbits 0 0 `i -> 0 `i 143  ]
+[e :U 144 ]
+"90
+[; ;main.c: 90:             z = SSPBUF;
+[e = _z _SSPBUF ]
+"91
+[; ;main.c: 91:             dato = SSPBUF;
+[e = _dato _SSPBUF ]
+"92
+[; ;main.c: 92:             _delay((unsigned long)((250)*(2000000/4000000.0)));
+[e ( __delay (1 -> * -> -> 250 `i `d / -> -> 2000000 `l `d .4000000.0 `ul ]
+"94
+[; ;main.c: 94:         }else if(!SSPSTATbits.D_nA && SSPSTATbits.R_nW){
+}
+[e $U 145  ]
+[e :U 141 ]
+[e $ ! && ! != -> . . _SSPSTATbits 0 5 `i -> 0 `i != -> . . _SSPSTATbits 0 2 `i -> 0 `i 146  ]
+{
+"95
+[; ;main.c: 95:             z = SSPBUF;
+[e = _z _SSPBUF ]
+"96
+[; ;main.c: 96:             BF = 0;
+[e = _BF -> -> 0 `i `b ]
+"97
+[; ;main.c: 97:             SSPBUF = ADC;
+[e = _SSPBUF _ADC ]
+"98
+[; ;main.c: 98:             SSPCONbits.CKP = 1;
+[e = . . _SSPCONbits 0 1 -> -> 1 `i `uc ]
+"99
+[; ;main.c: 99:             _delay((unsigned long)((250)*(2000000/4000000.0)));
+[e ( __delay (1 -> * -> -> 250 `i `d / -> -> 2000000 `l `d .4000000.0 `ul ]
+"100
+[; ;main.c: 100:             while(SSPSTATbits.BF);
+[e $U 147  ]
+[e :U 148 ]
+[e :U 147 ]
+[e $ != -> . . _SSPSTATbits 0 0 `i -> 0 `i 148  ]
+[e :U 149 ]
+"101
+[; ;main.c: 101:         }
+}
+[e :U 146 ]
+[e :U 145 ]
+"103
+[; ;main.c: 103:         PIR1bits.SSPIF = 0;
+[e = . . _PIR1bits 0 3 -> -> 0 `i `uc ]
+"104
+[; ;main.c: 104:     }
+}
+[e :U 139 ]
+"126
+[; ;main.c: 126: }
+[e :UE 138 ]
 }
 [v $root$_main `(v ~T0 @X0 0 e ]
-"149
-[; ;main.c: 149: void main(void) {
+"130
+[; ;main.c: 130: void main(void) {
 [v _main `(v ~T0 @X0 1 ef ]
 {
 [e :U _main ]
 [f ]
-"150
-[; ;main.c: 150:     setupINTOSC(5);
+"131
+[; ;main.c: 131:     setupINTOSC(5);
 [e ( _setupINTOSC (1 -> -> 5 `i `uc ]
-"151
-[; ;main.c: 151:     setup();
+"132
+[; ;main.c: 132:     setup();
 [e ( _setup ..  ]
-"152
-[; ;main.c: 152:     setupPWM();
+"133
+[; ;main.c: 133:     setupPWM();
 [e ( _setupPWM ..  ]
-"153
-[; ;main.c: 153:     initPwm(pwmFreq);
+"134
+[; ;main.c: 134:     initPwm(pwmFreq);
 [e ( _initPwm (1 _pwmFreq ]
-"154
-[; ;main.c: 154:     applyPWMDutyCycle(dutycycle,pwmFreq);
+"135
+[; ;main.c: 135:     applyPWMDutyCycle(dutycycle,pwmFreq);
 [e ( _applyPWMDutyCycle (2 , _dutycycle _pwmFreq ]
-"155
-[; ;main.c: 155:     ADC_config(0x01);
+"136
+[; ;main.c: 136:     ADC_config(0x01);
 [e ( _ADC_config (1 -> 1 `i ]
-"156
-[; ;main.c: 156:     dato = 0;
+"137
+[; ;main.c: 137:     dato = 0;
 [e = _dato -> -> 0 `i `uc ]
-"160
-[; ;main.c: 160:     while(1){
-[e :U 156 ]
+"141
+[; ;main.c: 141:     while(1){
+[e :U 152 ]
 {
-"161
-[; ;main.c: 161:         PORTCbits.RC0 = 0;
-[e = . . _PORTCbits 0 0 -> -> 0 `i `uc ]
-"162
-[; ;main.c: 162:         PORTCbits.RC1 = 1;
-[e = . . _PORTCbits 0 1 -> -> 1 `i `uc ]
-"163
-[; ;main.c: 163:         ADC = ADC_read(0);
+"142
+[; ;main.c: 142:         PORTDbits.RD0 = 0;
+[e = . . _PORTDbits 0 0 -> -> 0 `i `uc ]
+"143
+[; ;main.c: 143:         PORTDbits.RD1 = 1;
+[e = . . _PORTDbits 0 1 -> -> 1 `i `uc ]
+"144
+[; ;main.c: 144:         ADC = ADC_read(0);
 [e = _ADC -> ( _ADC_read (1 -> 0 `i `uc ]
-"164
-[; ;main.c: 164:         dutycycle = 4*ADC;
+"145
+[; ;main.c: 145:         dutycycle = 4*ADC;
 [e = _dutycycle -> * -> 4 `i -> _ADC `i `ui ]
-"168
-[; ;main.c: 168:         if (dutycycle != dutyCycleApply){
-[e $ ! != _dutycycle _dutyCycleApply 158  ]
+"147
+[; ;main.c: 147:         if (dutycycle != dutyCycleApply){
+[e $ ! != _dutycycle _dutyCycleApply 154  ]
 {
-"169
-[; ;main.c: 169:             applyPWMDutyCycle(dutycycle,pwmFreq);
+"148
+[; ;main.c: 148:             applyPWMDutyCycle(dutycycle,pwmFreq);
 [e ( _applyPWMDutyCycle (2 , _dutycycle _pwmFreq ]
-"170
-[; ;main.c: 170:             dutyCycleApply = dutycycle;
+"149
+[; ;main.c: 149:             dutyCycleApply = dutycycle;
 [e = _dutyCycleApply _dutycycle ]
-"171
-[; ;main.c: 171:         }
+"150
+[; ;main.c: 150:         }
 }
-[e :U 158 ]
-"173
-[; ;main.c: 173:         if (dutycycle < 0){
-[e $ ! < _dutycycle -> -> 0 `i `ui 159  ]
+[e :U 154 ]
+"152
+[; ;main.c: 152:         if (dutycycle < 0){
+[e $ ! < _dutycycle -> -> 0 `i `ui 155  ]
 {
-"174
-[; ;main.c: 174:             dutycycle = 0;
+"153
+[; ;main.c: 153:             dutycycle = 0;
 [e = _dutycycle -> -> 0 `i `ui ]
-"175
-[; ;main.c: 175:         }
+"154
+[; ;main.c: 154:         }
 }
-[e $U 160  ]
-"176
-[; ;main.c: 176:         else if (dutycycle >1023){
-[e :U 159 ]
-[e $ ! > _dutycycle -> -> 1023 `i `ui 161  ]
-{
-"177
-[; ;main.c: 177:             dutycycle = 1023;
-[e = _dutycycle -> -> 1023 `i `ui ]
-"178
-[; ;main.c: 178:         }
-}
-[e :U 161 ]
-[e :U 160 ]
-"189
-[; ;main.c: 189:     }
-}
-[e :U 155 ]
 [e $U 156  ]
-[e :U 157 ]
-"190
-[; ;main.c: 190:     return;
-[e $UE 154  ]
-"191
-[; ;main.c: 191: }
-[e :UE 154 ]
+"155
+[; ;main.c: 155:         else if (dutycycle >1023){
+[e :U 155 ]
+[e $ ! > _dutycycle -> -> 1023 `i `ui 157  ]
+{
+"156
+[; ;main.c: 156:             dutycycle = 1023;
+[e = _dutycycle -> -> 1023 `i `ui ]
+"157
+[; ;main.c: 157:         }
 }
-"195
-[; ;main.c: 195: void setup(void){
+[e :U 157 ]
+[e :U 156 ]
+"168
+[; ;main.c: 168:     }
+}
+[e :U 151 ]
+[e $U 152  ]
+[e :U 153 ]
+"169
+[; ;main.c: 169:     return;
+[e $UE 150  ]
+"170
+[; ;main.c: 170: }
+[e :UE 150 ]
+}
+"174
+[; ;main.c: 174: void setup(void){
 [v _setup `(v ~T0 @X0 1 ef ]
 {
 [e :U _setup ]
 [f ]
-"196
-[; ;main.c: 196:     ANSEL = 0;
+"175
+[; ;main.c: 175:     ANSEL = 0;
 [e = _ANSEL -> -> 0 `i `uc ]
-"197
-[; ;main.c: 197:     ANSELH = 0;
+"176
+[; ;main.c: 176:     ANSELH = 0;
 [e = _ANSELH -> -> 0 `i `uc ]
-"200
-[; ;main.c: 200:     TRISB = 0b00000111;
+"179
+[; ;main.c: 179:     TRISB = 0b00000111;
 [e = _TRISB -> -> 7 `i `uc ]
-"201
-[; ;main.c: 201:     TRISD = 0;
+"180
+[; ;main.c: 180:     TRISD = 0;
 [e = _TRISD -> -> 0 `i `uc ]
-"203
-[; ;main.c: 203:     PORTB = 0;
+"182
+[; ;main.c: 182:     PORTB = 0;
 [e = _PORTB -> -> 0 `i `uc ]
-"204
-[; ;main.c: 204:     PORTC = 0;
+"183
+[; ;main.c: 183:     PORTC = 0;
 [e = _PORTC -> -> 0 `i `uc ]
-"205
-[; ;main.c: 205:     PORTD = 0;
+"184
+[; ;main.c: 184:     PORTD = 0;
 [e = _PORTD -> -> 0 `i `uc ]
-"210
-[; ;main.c: 210:     INTCONbits.GIE = 1;
+"189
+[; ;main.c: 189:     INTCONbits.GIE = 1;
 [e = . . _INTCONbits 0 7 -> -> 1 `i `uc ]
-"221
-[; ;main.c: 221:     I2C_Slave_Init(0x50);
+"200
+[; ;main.c: 200:     I2C_Slave_Init(0x50);
 [e ( _I2C_Slave_Init (1 -> -> 80 `i `uc ]
-"222
-[; ;main.c: 222: }
-[e :UE 162 ]
+"201
+[; ;main.c: 201: }
+[e :UE 158 ]
 }
-"224
-[; ;main.c: 224: void setupPWM(void){
+"203
+[; ;main.c: 203: void setupPWM(void){
 [v _setupPWM `(v ~T0 @X0 1 ef ]
 {
 [e :U _setupPWM ]
 [f ]
-"226
-[; ;main.c: 226:     TRISCbits.TRISC2 = 1;
+"205
+[; ;main.c: 205:     TRISCbits.TRISC2 = 1;
 [e = . . _TRISCbits 0 2 -> -> 1 `i `uc ]
-"230
-[; ;main.c: 230:     CCP1CON = 0b00001100;
+"209
+[; ;main.c: 209:     CCP1CON = 0b00001100;
 [e = _CCP1CON -> -> 12 `i `uc ]
-"235
-[; ;main.c: 235:     TMR2IF = 0;
+"214
+[; ;main.c: 214:     TMR2IF = 0;
 [e = _TMR2IF -> -> 0 `i `b ]
-"236
-[; ;main.c: 236:     T2CONbits.T2CKPS = 0b01;
+"215
+[; ;main.c: 215:     T2CONbits.T2CKPS = 0b01;
 [e = . . _T2CONbits 0 0 -> -> 1 `i `uc ]
-"237
-[; ;main.c: 237:     TMR2ON = 1;
+"216
+[; ;main.c: 216:     TMR2ON = 1;
 [e = _TMR2ON -> -> 1 `i `b ]
-"239
-[; ;main.c: 239:     while(!TMR2IF);
-[e $U 164  ]
-[e :U 165 ]
-[e :U 164 ]
-[e $ ! _TMR2IF 165  ]
-[e :U 166 ]
-"240
-[; ;main.c: 240:     TRISCbits.TRISC2 = 0;
+"218
+[; ;main.c: 218:     while(!TMR2IF);
+[e $U 160  ]
+[e :U 161 ]
+[e :U 160 ]
+[e $ ! _TMR2IF 161  ]
+[e :U 162 ]
+"219
+[; ;main.c: 219:     TRISCbits.TRISC2 = 0;
 [e = . . _TRISCbits 0 2 -> -> 0 `i `uc ]
-"241
-[; ;main.c: 241: }
+"220
+[; ;main.c: 220: }
+[e :UE 159 ]
+}
+"222
+[; ;main.c: 222: uint32_t pwmMaxDuty(const uint32_t freq)
+[v _pwmMaxDuty `(ul ~T0 @X0 1 ef1`Cul ]
+"223
+[; ;main.c: 223: {
+{
+[e :U _pwmMaxDuty ]
+"222
+[; ;main.c: 222: uint32_t pwmMaxDuty(const uint32_t freq)
+[v _freq `Cul ~T0 @X0 1 r1 ]
+"223
+[; ;main.c: 223: {
+[f ]
+"224
+[; ;main.c: 224:   return(2000000/(freq*4));
+[e ) / -> -> 2000000 `l `ul * _freq -> -> -> 4 `i `l `ul ]
+[e $UE 163  ]
+"225
+[; ;main.c: 225: }
 [e :UE 163 ]
+}
+"227
+[; ;main.c: 227: void initPwm(const uint32_t freq)
+[v _initPwm `(v ~T0 @X0 1 ef1`Cul ]
+"228
+[; ;main.c: 228: {
+{
+[e :U _initPwm ]
+"227
+[; ;main.c: 227: void initPwm(const uint32_t freq)
+[v _freq `Cul ~T0 @X0 1 r1 ]
+"228
+[; ;main.c: 228: {
+[f ]
+"230
+[; ;main.c: 230:     PR2 = (uint8_t)((2000000/(freq*4*4)) - 1);
+[e = _PR2 -> - / -> -> 2000000 `l `ul * * _freq -> -> -> 4 `i `l `ul -> -> -> 4 `i `l `ul -> -> -> 1 `i `l `ul `uc ]
+"231
+[; ;main.c: 231: }
+[e :UE 164 ]
+}
+"234
+[; ;main.c: 234: void applyPWMDutyCycle(uint16_t dutyCycle, const uint32_t freq)
+[v _applyPWMDutyCycle `(v ~T0 @X0 1 ef2`ui`Cul ]
+"235
+[; ;main.c: 235: {
+{
+[e :U _applyPWMDutyCycle ]
+"234
+[; ;main.c: 234: void applyPWMDutyCycle(uint16_t dutyCycle, const uint32_t freq)
+[v _dutyCycle `ui ~T0 @X0 1 r1 ]
+[v _freq `Cul ~T0 @X0 1 r2 ]
+"235
+[; ;main.c: 235: {
+[f ]
+"236
+[; ;main.c: 236:     if(dutyCycle<1024)
+[e $ ! < _dutyCycle -> -> 1024 `i `ui 166  ]
+"237
+[; ;main.c: 237:     {
+{
+"239
+[; ;main.c: 239:         dutyCycle = (uint16_t)(((float)dutyCycle/1023)*pwmMaxDuty(freq));
+[e = _dutyCycle -> * / -> _dutyCycle `f -> -> 1023 `i `f -> ( _pwmMaxDuty (1 _freq `f `ui ]
+"240
+[; ;main.c: 240:         CCP1CON &= 0xCF;
+[e =& _CCP1CON -> -> 207 `i `Vuc ]
+"241
+[; ;main.c: 241:         CCP1CON |= (0x30&(dutyCycle<<4));
+[e =| _CCP1CON -> & -> -> 48 `i `ui << _dutyCycle -> 4 `i `Vuc ]
+"242
+[; ;main.c: 242:         CCPR1L = (uint8_t)(dutyCycle>>2);
+[e = _CCPR1L -> >> _dutyCycle -> 2 `i `uc ]
+"243
+[; ;main.c: 243:     }
+}
+[e :U 166 ]
+"244
+[; ;main.c: 244: }
+[e :UE 165 ]
 }

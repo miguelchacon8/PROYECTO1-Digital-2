@@ -39,7 +39,7 @@ bssBANK1 BANK1 1 B7 B7 E 1 1
 strings STRING 0 800 800 A 2 1
 bssCOMMON COMMON 1 79 79 2 1 1
 config CONFIG 4 2007 2007 2 2 1
-$C:\Users\Migue\AppData\Local\Temp\xcAsph4.o
+$C:\Users\Migue\AppData\Local\Temp\xcAs5a4.o
 idloc IDLOC 5 2000 2000 4 2 1
 reset_vec CODE 0 0 0 3 2 1
 end_init CODE 0 C C 3 2 1
@@ -98,56 +98,56 @@ STRING 1000-1FFF 2
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\SLAVE1.X.production.o
-F cinit CODE >1025:C:\Users\Migue\AppData\Local\Temp\xcAsph4.s
-F cinit CODE >1028:C:\Users\Migue\AppData\Local\Temp\xcAsph4.s
-F cinit CODE >1069:C:\Users\Migue\AppData\Local\Temp\xcAsph4.s
-10 cinit CODE >1070:C:\Users\Migue\AppData\Local\Temp\xcAsph4.s
-11 cinit CODE >1073:C:\Users\Migue\AppData\Local\Temp\xcAsph4.s
-12 cinit CODE >1074:C:\Users\Migue\AppData\Local\Temp\xcAsph4.s
-13 cinit CODE >1075:C:\Users\Migue\AppData\Local\Temp\xcAsph4.s
-14 cinit CODE >1076:C:\Users\Migue\AppData\Local\Temp\xcAsph4.s
-15 cinit CODE >1077:C:\Users\Migue\AppData\Local\Temp\xcAsph4.s
-16 cinit CODE >1078:C:\Users\Migue\AppData\Local\Temp\xcAsph4.s
-17 cinit CODE >1079:C:\Users\Migue\AppData\Local\Temp\xcAsph4.s
-18 cinit CODE >1080:C:\Users\Migue\AppData\Local\Temp\xcAsph4.s
-19 cinit CODE >1081:C:\Users\Migue\AppData\Local\Temp\xcAsph4.s
-1A cinit CODE >1082:C:\Users\Migue\AppData\Local\Temp\xcAsph4.s
-1B cinit CODE >1083:C:\Users\Migue\AppData\Local\Temp\xcAsph4.s
-1C cinit CODE >1084:C:\Users\Migue\AppData\Local\Temp\xcAsph4.s
-1D cinit CODE >1085:C:\Users\Migue\AppData\Local\Temp\xcAsph4.s
-1E cinit CODE >1086:C:\Users\Migue\AppData\Local\Temp\xcAsph4.s
-1F cinit CODE >1087:C:\Users\Migue\AppData\Local\Temp\xcAsph4.s
-20 cinit CODE >1088:C:\Users\Migue\AppData\Local\Temp\xcAsph4.s
-21 cinit CODE >1094:C:\Users\Migue\AppData\Local\Temp\xcAsph4.s
-21 cinit CODE >1096:C:\Users\Migue\AppData\Local\Temp\xcAsph4.s
-22 cinit CODE >1097:C:\Users\Migue\AppData\Local\Temp\xcAsph4.s
-4 intentry CODE >90:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
-D4E text16 CODE >90:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
-D4E text16 CODE >91:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
-D54 text16 CODE >93:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
-D55 text16 CODE >95:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
-D5D text16 CODE >96:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
-D5F text16 CODE >97:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
-D60 text16 CODE >98:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
-D61 text16 CODE >99:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
-D62 text16 CODE >102:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
-D6C text16 CODE >104:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
-D70 text16 CODE >106:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
-D71 text16 CODE >107:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
-D72 text16 CODE >108:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
-D78 text16 CODE >109:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
-D7C text16 CODE >110:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
-D80 text16 CODE >111:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
-D85 text16 CODE >113:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
-D8E text16 CODE >114:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
-D92 text16 CODE >115:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
-D95 text16 CODE >116:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
-D99 text16 CODE >117:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
-D9A text16 CODE >118:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
-D9F text16 CODE >119:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
-DA5 text16 CODE >120:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
-DA5 text16 CODE >122:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
-DA8 text16 CODE >145:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
+F cinit CODE >1025:C:\Users\Migue\AppData\Local\Temp\xcAs5a4.s
+F cinit CODE >1028:C:\Users\Migue\AppData\Local\Temp\xcAs5a4.s
+F cinit CODE >1069:C:\Users\Migue\AppData\Local\Temp\xcAs5a4.s
+10 cinit CODE >1070:C:\Users\Migue\AppData\Local\Temp\xcAs5a4.s
+11 cinit CODE >1073:C:\Users\Migue\AppData\Local\Temp\xcAs5a4.s
+12 cinit CODE >1074:C:\Users\Migue\AppData\Local\Temp\xcAs5a4.s
+13 cinit CODE >1075:C:\Users\Migue\AppData\Local\Temp\xcAs5a4.s
+14 cinit CODE >1076:C:\Users\Migue\AppData\Local\Temp\xcAs5a4.s
+15 cinit CODE >1077:C:\Users\Migue\AppData\Local\Temp\xcAs5a4.s
+16 cinit CODE >1078:C:\Users\Migue\AppData\Local\Temp\xcAs5a4.s
+17 cinit CODE >1079:C:\Users\Migue\AppData\Local\Temp\xcAs5a4.s
+18 cinit CODE >1080:C:\Users\Migue\AppData\Local\Temp\xcAs5a4.s
+19 cinit CODE >1081:C:\Users\Migue\AppData\Local\Temp\xcAs5a4.s
+1A cinit CODE >1082:C:\Users\Migue\AppData\Local\Temp\xcAs5a4.s
+1B cinit CODE >1083:C:\Users\Migue\AppData\Local\Temp\xcAs5a4.s
+1C cinit CODE >1084:C:\Users\Migue\AppData\Local\Temp\xcAs5a4.s
+1D cinit CODE >1085:C:\Users\Migue\AppData\Local\Temp\xcAs5a4.s
+1E cinit CODE >1086:C:\Users\Migue\AppData\Local\Temp\xcAs5a4.s
+1F cinit CODE >1087:C:\Users\Migue\AppData\Local\Temp\xcAs5a4.s
+20 cinit CODE >1088:C:\Users\Migue\AppData\Local\Temp\xcAs5a4.s
+21 cinit CODE >1094:C:\Users\Migue\AppData\Local\Temp\xcAs5a4.s
+21 cinit CODE >1096:C:\Users\Migue\AppData\Local\Temp\xcAs5a4.s
+22 cinit CODE >1097:C:\Users\Migue\AppData\Local\Temp\xcAs5a4.s
+4 intentry CODE >71:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
+D4E text16 CODE >71:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
+D4E text16 CODE >72:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
+D54 text16 CODE >74:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
+D55 text16 CODE >76:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
+D5D text16 CODE >77:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
+D5F text16 CODE >78:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
+D60 text16 CODE >79:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
+D61 text16 CODE >80:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
+D62 text16 CODE >83:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
+D6C text16 CODE >85:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
+D70 text16 CODE >87:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
+D71 text16 CODE >88:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
+D72 text16 CODE >89:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
+D78 text16 CODE >90:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
+D7C text16 CODE >91:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
+D80 text16 CODE >92:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
+D85 text16 CODE >94:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
+D8E text16 CODE >95:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
+D92 text16 CODE >96:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
+D95 text16 CODE >97:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
+D99 text16 CODE >98:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
+D9A text16 CODE >99:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
+D9F text16 CODE >100:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
+DA5 text16 CODE >101:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
+DA5 text16 CODE >103:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
+DA8 text16 CODE >126:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
 C2A text15 CODE >11:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\setupADC.c
 C2A text15 CODE >12:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\setupADC.c
 C2E text15 CODE >13:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\setupADC.c
@@ -624,32 +624,32 @@ E06 text8 CODE >26:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\_
 E08 text8 CODE >27:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
 E0E text8 CODE >29:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
 E16 text8 CODE >30:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
-7CB text7 CODE >64:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
-7CB text7 CODE >66:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
-7D6 text7 CODE >66:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
-7DC text7 CODE >66:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
-7FD text7 CODE >67:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
-701 text6 CODE >76:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
-701 text6 CODE >78:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
-706 text6 CODE >78:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
-708 text6 CODE >78:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
-70C text6 CODE >81:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
-79E text6 CODE >82:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
-7A4 text6 CODE >83:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
-7AB text6 CODE >83:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
-7AE text6 CODE >83:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
-7B0 text6 CODE >83:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
-7B6 text6 CODE >84:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
-7C2 text6 CODE >84:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
-7C5 text6 CODE >84:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
-7CA text6 CODE >86:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
-C63 text5 CODE >69:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
-C63 text5 CODE >72:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
-C6E text5 CODE >72:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
-C74 text5 CODE >72:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
-C77 text5 CODE >72:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
-C7D text5 CODE >72:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
-C9B text5 CODE >73:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
+7CB text7 CODE >222:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
+7CB text7 CODE >224:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
+7D6 text7 CODE >224:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
+7DC text7 CODE >224:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
+7FD text7 CODE >225:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
+701 text6 CODE >234:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
+701 text6 CODE >236:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
+706 text6 CODE >236:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
+708 text6 CODE >236:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
+70C text6 CODE >239:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
+79E text6 CODE >240:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
+7A4 text6 CODE >241:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
+7AB text6 CODE >241:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
+7AE text6 CODE >241:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
+7B0 text6 CODE >241:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
+7B6 text6 CODE >242:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
+7C2 text6 CODE >242:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
+7C5 text6 CODE >242:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
+7CA text6 CODE >244:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
+C63 text5 CODE >227:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
+C63 text5 CODE >230:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
+C6E text5 CODE >230:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
+C74 text5 CODE >230:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
+C77 text5 CODE >230:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
+C7D text5 CODE >230:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
+C9B text5 CODE >231:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
 BE7 text4 CODE >93:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\I2C.c
 BE8 text4 CODE >95:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\I2C.c
 BEC text4 CODE >96:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\I2C.c
@@ -662,17 +662,17 @@ BF9 text4 CODE >102:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\
 BFA text4 CODE >103:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\I2C.c
 BFD text4 CODE >104:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\I2C.c
 C00 text4 CODE >105:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\I2C.c
-BD1 text3 CODE >195:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
-BD1 text3 CODE >196:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
-BD4 text3 CODE >197:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
-BD5 text3 CODE >200:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
-BD9 text3 CODE >201:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
-BDA text3 CODE >203:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
-BDD text3 CODE >204:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
-BDE text3 CODE >205:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
-BDF text3 CODE >210:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
-BE0 text3 CODE >221:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
-BE6 text3 CODE >222:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
+BD1 text3 CODE >174:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
+BD1 text3 CODE >175:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
+BD4 text3 CODE >176:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
+BD5 text3 CODE >179:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
+BD9 text3 CODE >180:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
+BDA text3 CODE >182:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
+BDD text3 CODE >183:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
+BDE text3 CODE >184:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
+BDF text3 CODE >189:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
+BE0 text3 CODE >200:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
+BE6 text3 CODE >201:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
 CEF text2 CODE >10:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\oscilador.c
 CF0 text2 CODE >11:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\oscilador.c
 CF6 text2 CODE >12:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\oscilador.c
@@ -699,37 +699,37 @@ D41 text2 CODE >32:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\o
 D46 text2 CODE >33:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\oscilador.c
 D4A text2 CODE >36:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\oscilador.c
 D4D text2 CODE >37:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\oscilador.c
-BBC text1 CODE >224:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
-BBC text1 CODE >226:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
-BBF text1 CODE >230:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
-BC3 text1 CODE >235:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
-BC4 text1 CODE >236:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
-BC8 text1 CODE >237:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
-BC9 text1 CODE >239:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
-BCD text1 CODE >240:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
-BD0 text1 CODE >241:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
-E17 maintext CODE >149:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
-E17 maintext CODE >150:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
-E1D maintext CODE >151:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
-E22 maintext CODE >152:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
+BBC text1 CODE >203:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
+BBC text1 CODE >205:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
+BBF text1 CODE >209:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
+BC3 text1 CODE >214:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
+BC4 text1 CODE >215:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
+BC8 text1 CODE >216:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
+BC9 text1 CODE >218:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
+BCD text1 CODE >219:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
+BD0 text1 CODE >220:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
+E17 maintext CODE >130:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
+E17 maintext CODE >131:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
+E1D maintext CODE >132:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
+E22 maintext CODE >133:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
 E27 maintext CODE >49:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
-E49 maintext CODE >155:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
-E52 maintext CODE >156:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
-E55 maintext CODE >161:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
-E58 maintext CODE >162:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
-E59 maintext CODE >163:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
-E65 maintext CODE >164:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
-E6A maintext CODE >164:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
-E6D maintext CODE >164:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
-E7A maintext CODE >168:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
-E7C maintext CODE >168:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
-E80 maintext CODE >168:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
+E49 maintext CODE >136:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
+E52 maintext CODE >137:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
+E55 maintext CODE >142:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
+E58 maintext CODE >143:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
+E59 maintext CODE >144:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
+E65 maintext CODE >145:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
+E6A maintext CODE >145:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
+E6D maintext CODE >145:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
+E7A maintext CODE >147:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
+E7C maintext CODE >147:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
+E80 maintext CODE >147:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
 E84 maintext CODE >49:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
-E95 maintext CODE >170:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
-E9B maintext CODE >176:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
-E9E maintext CODE >176:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
-EA0 maintext CODE >176:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
-EA4 maintext CODE >177:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
+E95 maintext CODE >149:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
+E9B maintext CODE >155:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
+E9E maintext CODE >155:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
+EA0 maintext CODE >155:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
+EA4 maintext CODE >156:C:\Users\Migue\Desktop\3er año\DIGITAL 2\PROYECTO1\SLAVE1.X\main.c
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -754,11 +754,11 @@ _BF 4A0 0 ABS 0 - dist/default/production\SLAVE1.X.production.o
 __Hstrings 0 0 ABS 0 strings -
 _ADIF 66 0 ABS 0 - dist/default/production\SLAVE1.X.production.o
 _PEIE 5E 0 ABS 0 - dist/default/production\SLAVE1.X.production.o
-___sp 0 0 STACK 2 stack C:\Users\Migue\AppData\Local\Temp\xcAsph4.o
+___sp 0 0 STACK 2 stack C:\Users\Migue\AppData\Local\Temp\xcAs5a4.o
 _dato C3 0 BANK1 1 bssBANK1 dist/default/production\SLAVE1.X.production.o
 _main 1C2E 0 CODE 0 maintext dist/default/production\SLAVE1.X.production.o
 btemp 7E 0 ABS 0 - dist/default/production\SLAVE1.X.production.o
-start 18 0 CODE 0 init C:\Users\Migue\AppData\Local\Temp\xcAsph4.o
+start 18 0 CODE 0 init C:\Users\Migue\AppData\Local\Temp\xcAs5a4.o
 ___flmul@aexp A1 0 BANK1 1 cstackBANK1 dist/default/production\SLAVE1.X.production.o
 ___flmul@bexp A6 0 BANK1 1 cstackBANK1 dist/default/production\SLAVE1.X.production.o
 ___flmul@prod A7 0 BANK1 1 cstackBANK1 dist/default/production\SLAVE1.X.production.o
@@ -767,12 +767,12 @@ ___flmul@temp AB 0 BANK1 1 cstackBANK1 dist/default/production\SLAVE1.X.producti
 __HbssCOMMON 0 0 ABS 0 bssCOMMON -
 __Hpowerup 0 0 CODE 0 powerup -
 __end_of_pwmMaxDuty FFC 0 CODE 0 text7 dist/default/production\SLAVE1.X.production.o
-intlevel0 0 0 ENTRY 0 functab C:\Users\Migue\AppData\Local\Temp\xcAsph4.o
-intlevel1 0 0 ENTRY 0 functab C:\Users\Migue\AppData\Local\Temp\xcAsph4.o
-intlevel2 0 0 ENTRY 0 functab C:\Users\Migue\AppData\Local\Temp\xcAsph4.o
-intlevel3 0 0 ENTRY 0 functab C:\Users\Migue\AppData\Local\Temp\xcAsph4.o
-intlevel4 0 0 ENTRY 0 functab C:\Users\Migue\AppData\Local\Temp\xcAsph4.o
-intlevel5 0 0 ENTRY 0 functab C:\Users\Migue\AppData\Local\Temp\xcAsph4.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\Migue\AppData\Local\Temp\xcAs5a4.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\Migue\AppData\Local\Temp\xcAs5a4.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\Migue\AppData\Local\Temp\xcAs5a4.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\Migue\AppData\Local\Temp\xcAs5a4.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\Migue\AppData\Local\Temp\xcAs5a4.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\Migue\AppData\Local\Temp\xcAs5a4.o
 __LbssCOMMON 0 0 ABS 0 bssCOMMON -
 _setupINTOSC 19DE 0 CODE 0 text2 dist/default/production\SLAVE1.X.production.o
 _OSCCONbits 8F 0 ABS 0 - dist/default/production\SLAVE1.X.production.o
@@ -799,8 +799,8 @@ __end_of___fltol 1E8C 0 CODE 0 text10 dist/default/production\SLAVE1.X.productio
 __end_of___lldiv 1C2E 0 CODE 0 text8 dist/default/production\SLAVE1.X.production.o
 __Umul8_16@multiplicand 73 0 COMMON 1 cstackCOMMON dist/default/production\SLAVE1.X.production.o
 __end_of_ADC_read 19DE 0 CODE 0 text14 dist/default/production\SLAVE1.X.production.o
-___stackhi 0 0 ABS 0 - C:\Users\Migue\AppData\Local\Temp\xcAsph4.o
-___stacklo 0 0 ABS 0 - C:\Users\Migue\AppData\Local\Temp\xcAsph4.o
+___stackhi 0 0 ABS 0 - C:\Users\Migue\AppData\Local\Temp\xcAs5a4.o
+___stacklo 0 0 ABS 0 - C:\Users\Migue\AppData\Local\Temp\xcAs5a4.o
 _I2C_Slave_Init 17CE 0 CODE 0 text4 dist/default/production\SLAVE1.X.production.o
 ___fldiv@a 3E 0 BANK0 1 cstackBANK0 dist/default/production\SLAVE1.X.production.o
 ___fldiv@b 42 0 BANK0 1 cstackBANK0 dist/default/production\SLAVE1.X.production.o
@@ -821,7 +821,7 @@ _TMR2ON 92 0 ABS 0 - dist/default/production\SLAVE1.X.production.o
 _TRISC3 43B 0 ABS 0 - dist/default/production\SLAVE1.X.production.o
 _TRISC4 43C 0 ABS 0 - dist/default/production\SLAVE1.X.production.o
 __end_of_initPwm 1938 0 CODE 0 text5 dist/default/production\SLAVE1.X.production.o
-___int_sp 0 0 STACK 2 stack C:\Users\Migue\AppData\Local\Temp\xcAsph4.o
+___int_sp 0 0 STACK 2 stack C:\Users\Migue\AppData\Local\Temp\xcAs5a4.o
 __Hbank0 0 0 ABS 0 bank0 -
 __Hbank1 0 0 ABS 0 bank1 -
 __Hbank2 0 0 ABS 0 bank2 -
@@ -850,7 +850,7 @@ ADC_config@channel 73 0 COMMON 1 cstackCOMMON dist/default/production\SLAVE1.X.p
 __Lstack 0 0 STACK 2 stack -
 ___flmul@grs A2 0 BANK1 1 cstackBANK1 dist/default/production\SLAVE1.X.production.o
 _PORTAbits 5 0 ABS 0 - dist/default/production\SLAVE1.X.production.o
-_PORTCbits 7 0 ABS 0 - dist/default/production\SLAVE1.X.production.o
+_PORTDbits 8 0 ABS 0 - dist/default/production\SLAVE1.X.production.o
 ?_pwmMaxDuty 28 0 BANK0 1 cstackBANK0 dist/default/production\SLAVE1.X.production.o
 _INTCONbits B 0 ABS 0 - dist/default/production\SLAVE1.X.production.o
 __Habs1 0 0 ABS 0 abs1 -
@@ -887,7 +887,7 @@ __end_of_isr 1B5E 0 CODE 0 text16 dist/default/production\SLAVE1.X.production.o
 __Lintentry 8 0 CODE 0 intentry -
 ___lldiv@divisor 20 0 BANK0 1 cstackBANK0 dist/default/production\SLAVE1.X.production.o
 __stringtab 1000 0 STRING 0 strings dist/default/production\SLAVE1.X.production.o
-reset_vec 0 0 CODE 0 reset_vec C:\Users\Migue\AppData\Local\Temp\xcAsph4.o
+reset_vec 0 0 CODE 0 reset_vec C:\Users\Migue\AppData\Local\Temp\xcAs5a4.o
 __end_of___xxtofl 2000 0 CODE 0 text9 dist/default/production\SLAVE1.X.production.o
 __LbssBANK1 0 0 ABS 0 bssBANK1 -
 __end_of_pwmFreq 1014 0 STRING 0 strings dist/default/production\SLAVE1.X.production.o

@@ -2759,33 +2759,10 @@ const uint32_t pwmFreq = 5000;
 
 void setup(void);
 void setupPWM(void);
-# 64 "main.c"
-uint32_t pwmMaxDuty(const uint32_t freq)
-{
-  return(2000000/(freq*4));
-}
-
-void initPwm(const uint32_t freq)
-{
-
-    PR2 = (uint8_t)((2000000/(freq*4*4)) - 1);
-}
-
-
-void applyPWMDutyCycle(uint16_t dutyCycle, const uint32_t freq)
-{
-    if(dutyCycle<1024)
-    {
-
-        dutyCycle = (uint16_t)(((float)dutyCycle/1023)*pwmMaxDuty(freq));
-        CCP1CON &= 0xCF;
-        CCP1CON |= (0x30&(dutyCycle<<4));
-        CCPR1L = (uint8_t)(dutyCycle>>2);
-    }
-}
-
-
-
+uint32_t pwmMaxDuty(const uint32_t freq);
+void initPwm(const uint32_t freq);
+void applyPWMDutyCycle(uint16_t dutyCycle, const uint32_t freq);
+# 71 "main.c"
 void __attribute__((picinterrupt(("")))) isr(void){
    if(PIR1bits.SSPIF == 1){
 
@@ -2820,7 +2797,7 @@ void __attribute__((picinterrupt(("")))) isr(void){
 
         PIR1bits.SSPIF = 0;
     }
-# 145 "main.c"
+# 126 "main.c"
 }
 
 
@@ -2837,12 +2814,10 @@ void main(void) {
 
 
     while(1){
-        PORTCbits.RC0 = 0;
-        PORTCbits.RC1 = 1;
+        PORTDbits.RD0 = 0;
+        PORTDbits.RD1 = 1;
         ADC = ADC_read(0);
         dutycycle = 4*ADC;
-
-
 
         if (dutycycle != dutyCycleApply){
             applyPWMDutyCycle(dutycycle,pwmFreq);
@@ -2855,7 +2830,7 @@ void main(void) {
         else if (dutycycle >1023){
             dutycycle = 1023;
         }
-# 189 "main.c"
+# 168 "main.c"
     }
     return;
 }
@@ -2878,7 +2853,7 @@ void setup(void){
 
 
     INTCONbits.GIE = 1;
-# 221 "main.c"
+# 200 "main.c"
     I2C_Slave_Init(0x50);
 }
 
@@ -2899,4 +2874,28 @@ void setupPWM(void){
 
     while(!TMR2IF);
     TRISCbits.TRISC2 = 0;
+}
+
+uint32_t pwmMaxDuty(const uint32_t freq)
+{
+  return(2000000/(freq*4));
+}
+
+void initPwm(const uint32_t freq)
+{
+
+    PR2 = (uint8_t)((2000000/(freq*4*4)) - 1);
+}
+
+
+void applyPWMDutyCycle(uint16_t dutyCycle, const uint32_t freq)
+{
+    if(dutyCycle<1024)
+    {
+
+        dutyCycle = (uint16_t)(((float)dutyCycle/1023)*pwmMaxDuty(freq));
+        CCP1CON &= 0xCF;
+        CCP1CON |= (0x30&(dutyCycle<<4));
+        CCPR1L = (uint8_t)(dutyCycle>>2);
+    }
 }

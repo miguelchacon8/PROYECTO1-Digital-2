@@ -57,14 +57,28 @@ void setup(void);
 //variables para botones
 uint8_t iniciostop = 0;
 uint8_t cambio = 0;
-
+uint8_t ENCENDIDO = 0;
 
 
 //*****************************************************************************
 // Código de Interrupción 
 //*****************************************************************************
 void __interrupt() ISR (void){
-
+	
+	if (RBIF == 1){
+    if (PORTBbits.RB0 == 0){
+        __delay_ms(10);
+        if (PORTBbits.RB0 == 1){ //incremento el puerto
+            if (ENCENDIDO != 0){
+                ENCENDIDO = 0;
+            }
+            else if (ENCENDIDO == 0){
+                ENCENDIDO = 1;
+            }
+            INTCONbits.RBIF = 0;       
+        }  
+    }
+    }
 }
 //******************************************************************************
 // Código Principal
@@ -74,13 +88,10 @@ void main(void) {
     setup();
 
     while(1){ 
-        //LECTURA DEL ADC
-//        I2C_Master_Start();
-//        I2C_Master_Write(0x51);
-//        V1 = I2C_Master_Read(0);
-//        I2C_Master_Stop();
-//        __delay_ms(20);
-
+        I2C_Master_Start();            //Incia comunicaión I2C
+        I2C_Master_Write(0x50);        //Escoje dirección del SLAVE 1
+        I2C_Master_Write(ENCENDIDO);         //ESCRIBE
+        I2C_Master_Stop();             //Detiene la comunicaión I2C
     }
 }
 //******************************************************************************
@@ -90,7 +101,7 @@ void setup(void){
     //PUERTOS
     ANSEL = 0;
     ANSELH = 0;
-    TRISB = 0b00000111;
+    TRISB = 0b00000001;
     TRISA = 0;
     TRISD = 0;
     
@@ -105,11 +116,8 @@ void setup(void){
     INTCONbits.GIE = 1; //interrupciones globales
     
     WPUBbits.WPUB0 = 1; //inputs
-    WPUBbits.WPUB1 = 1;
     IOCBbits.IOCB0 = 1; //inputs
-    IOCBbits.IOCB1 = 1;
-    WPUBbits.WPUB2 = 1;
-    IOCBbits.IOCB2 = 1; //inputs
+
     
     OPTION_REGbits.nRBPU = 0; //no RBPU, habilitan los pullups internos
     
