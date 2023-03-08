@@ -10,19 +10,19 @@
 
 #define SDA_PIN 21
 #define SCL_PIN 22
-#define I2C_SLAVE_ADDR 0x04
+#define I2C_DEV_ADDR 0x55
 
 #include "AdafruitIO_WiFi.h"
 #include <Arduino.h>
 #include <Wire.h>
 #include <WireSlave.h>
+#include "Wire.h"
 
-void receiveEvent(int howMany);
 
 AdafruitIO_WiFi io(IO_USERNAME, IO_KEY, WIFI_SSID, WIFI_PASS);
 // this int will hold the current count for our sketch
 int temp = 0;
-int verif = 0; 
+int seg = 0; 
 //int vel = 0;
 //int min = 0;
 
@@ -31,27 +31,42 @@ AdafruitIO_Feed *temperatura = io.feed("temperatura");
 // AdafruitIO_Feed *velocidad = io.feed("velocidad");
 // AdafruitIO_Feed *minutos = io.feed("minutos");
 
+uint32_t i = 0;
+
+void onRequest(){
+  Wire.print(i++);
+  Wire.print(" Packets.");
+  Serial.println("onRequest");
+}
+
+void onReceive(int len){
+  Serial.printf("onReceive[%d]: ", len);
+  while(Wire.available()){
+    Serial.write(Wire.read());
+  }
+  Serial.println();
+}
+
 void setup() {
 
   // start the serial connection
-    Serial.begin(115200);
+  Serial.begin(115200);
+  Serial.setDebugOutput(true);
+  Wire.onReceive(onReceive);
+  Wire.onRequest(onRequest);
+  Wire.begin((uint8_t)I2C_DEV_ADDR);
 
-    bool success = WireSlave.begin(SDA_PIN, SCL_PIN, I2C_SLAVE_ADDR);
-    if (!success) {
-        Serial.println("I2C slave init failed");
-        while(1) delay(100);
-    }
-
-    WireSlave.onReceive(receiveEvent);
+#if CONFIG_IDF_TARGET_ESP32
+  char message[64];
+  snprintf(message, 64, "%u Packets.", i++);
+  Wire.slaveWrite((uint8_t *)message, strlen(message));
+#endif
 
   // wait for serial monitor to open
   while(! Serial);
-
   Serial.print("Connecting to Adafruit IO");
-
   // connect to io.adafruit.com
   io.connect();
-
   // wait for a connection
   while(io.status() < AIO_CONNECTED) {
     Serial.print(".");
@@ -64,6 +79,10 @@ void setup() {
 }
 
 void loop() {
+  temp = Wire.read();
+  vel = Wire.read();
+  min = Wire.read();
+  seg = Wire.read();
 
   io.run();
 
@@ -76,34 +95,5 @@ void loop() {
 
   delay(3000);
 
-  WireSlave.update();
 
-    // let I2C and other ESP32 peripherals interrupts work
-  delay(1);
-
-
-void receiveEvent(int howMany)
-{
-    while (1 < WireSlave.available()){ // loop through all but the last byte
-        c = WireSlave.read();  // receive byte as a character
-        Serial.print(c);            // print the character
-    }
-
-      int x = WireSlave.read();   // receive byte as an integer
-      Serial.println(x);          // print the integer
-}
-}
-
-// if (c == 10){
-//   temp = WireSlave.read();
-// }
-// else if (c == 20){
-//   velocidad = WireSlave.read();
-// }
-// else if (c == 30){
-//   umin = WireSlave.read();
-// }
-// else if (c == 40){
-//   dmin = WireSlave.read();
-// }
 
