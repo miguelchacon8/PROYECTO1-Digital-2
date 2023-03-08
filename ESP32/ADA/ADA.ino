@@ -22,6 +22,7 @@ void receiveEvent(int howMany);
 AdafruitIO_WiFi io(IO_USERNAME, IO_KEY, WIFI_SSID, WIFI_PASS);
 // this int will hold the current count for our sketch
 int temp = 0;
+int verif = 0; 
 //int vel = 0;
 //int min = 0;
 
@@ -83,13 +84,26 @@ void loop() {
 
 void receiveEvent(int howMany)
 {
-    while (1 < WireSlave.available()) // loop through all but the last byte
-    {
-        char c = WireSlave.read();  // receive byte as a character
+    while (1 < WireSlave.available()){ // loop through all but the last byte
+        c = WireSlave.read();  // receive byte as a character
         Serial.print(c);            // print the character
     }
 
-    int x = WireSlave.read();   // receive byte as an integer
-    Serial.println(x);          // print the integer
+      int x = WireSlave.read();   // receive byte as an integer
+      Serial.println(x);          // print the integer
 }
 }
+
+// if (c == 10){
+//   temp = WireSlave.read();
+// }
+// else if (c == 20){
+//   velocidad = WireSlave.read();
+// }
+// else if (c == 30){
+//   umin = WireSlave.read();
+// }
+// else if (c == 40){
+//   dmin = WireSlave.read();
+// }
+
