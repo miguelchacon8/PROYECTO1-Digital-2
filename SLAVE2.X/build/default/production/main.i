@@ -2743,6 +2743,9 @@ void setupINTOSC(uint8_t IRCF);
 uint8_t z;
 uint8_t dato;
 uint8_t SERVO = 0;
+
+
+
 unsigned int ADC_RES;
 unsigned int valDC;
 unsigned int valDCL;
@@ -2820,13 +2823,13 @@ void main(void) {
     setupINTOSC(3);
     setup();
     setupPWM();
-    ADC_config(0x01);
+
     dato = 0;
 
 
 
     while(1){
-        PORTD = SERVO;
+
         CCPR1L = SERVO;
         _delay((unsigned long)((1)*(500000/4000.0)));
 

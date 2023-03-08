@@ -11,13 +11,13 @@
   0h - 5h		(dist/default/production\SLAVE1.X.production.hex)
   8h - FFBh		(dist/default/production\SLAVE1.X.production.hex)
   1000h - 1013h		(dist/default/production\SLAVE1.X.production.hex)
-  1778h - 1FFFh		(dist/default/production\SLAVE1.X.production.hex)
+  1728h - 1FFFh		(dist/default/production\SLAVE1.X.production.hex)
   4000h - 4007h		(dist/default/production\SLAVE1.X.production.hex)
   400Eh - 4011h		(dist/default/production\SLAVE1.X.production.hex)
  Unused ranges:
   6h - 7h
   FFCh - FFFh
-  1014h - 1777h
+  1014h - 1727h
   2000h - 3FFFh
   4008h - 400Dh
 
@@ -287,7 +287,12 @@
 00001000 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
 00001010 | H1 H1 H1 H1 -- -- -- -- -- -- -- -- -- -- -- --
 ----------------------------------------------------------
-00001770 | -- -- -- -- -- -- -- -- H1 H1 H1 H1 H1 H1 H1 H1
+00001720 | -- -- -- -- -- -- -- -- H1 H1 H1 H1 H1 H1 H1 H1
+00001730 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+00001740 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+00001750 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+00001760 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+00001770 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
 00001780 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
 00001790 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
 000017A0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1

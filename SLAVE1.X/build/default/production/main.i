@@ -2762,7 +2762,10 @@ void setupPWM(void);
 uint32_t pwmMaxDuty(const uint32_t freq);
 void initPwm(const uint32_t freq);
 void applyPWMDutyCycle(uint16_t dutyCycle, const uint32_t freq);
-# 71 "main.c"
+
+
+
+
 void __attribute__((picinterrupt(("")))) isr(void){
    if(PIR1bits.SSPIF == 1){
 
@@ -2797,7 +2800,8 @@ void __attribute__((picinterrupt(("")))) isr(void){
 
         PIR1bits.SSPIF = 0;
     }
-# 126 "main.c"
+
+
 }
 
 
@@ -2810,27 +2814,28 @@ void main(void) {
     applyPWMDutyCycle(dutycycle,pwmFreq);
     ADC_config(0x01);
     dato = 0;
+    z=1;
 
 
 
     while(1){
-        PORTDbits.RD0 = 0;
-        PORTDbits.RD1 = 1;
-        ADC = ADC_read(0);
-        dutycycle = 4*ADC;
-
-        if (dutycycle != dutyCycleApply){
-            applyPWMDutyCycle(dutycycle,pwmFreq);
-            dutyCycleApply = dutycycle;
+        if (z == 1){
+            PORTDbits.RD0 = 0;
+            PORTDbits.RD1 = 1;
+            ADC = ADC_read(0);
+            dutycycle = 4*ADC;
+            if (dutycycle != dutyCycleApply){
+                applyPWMDutyCycle(dutycycle,pwmFreq);
+                dutyCycleApply = dutycycle;
+            }
         }
-
-        if (dutycycle < 0){
+        else if (z == 0){
             dutycycle = 0;
+            if (dutycycle != dutyCycleApply){
+                applyPWMDutyCycle(dutycycle,pwmFreq);
+                dutyCycleApply = dutycycle;
+            }
         }
-        else if (dutycycle >1023){
-            dutycycle = 1023;
-        }
-# 168 "main.c"
     }
     return;
 }
@@ -2842,7 +2847,7 @@ void setup(void){
     ANSELH = 0;
 
 
-    TRISB = 0b00000111;
+    TRISB = 0b00000000;
     TRISD = 0;
 
     PORTB = 0;
@@ -2850,10 +2855,8 @@ void setup(void){
     PORTD = 0;
 
 
-
-
     INTCONbits.GIE = 1;
-# 200 "main.c"
+
     I2C_Slave_Init(0x50);
 }
 

@@ -37,6 +37,9 @@
 uint8_t z;
 uint8_t dato;
 uint8_t SERVO = 0;
+
+
+
 unsigned int ADC_RES; //valor del ADC ccp1
 unsigned int valDC; //valor que se carga para el servo
 unsigned int valDCL; //adc low
@@ -114,13 +117,13 @@ void main(void) {
     setupINTOSC(3);
     setup();
     setupPWM();
-    ADC_config(0x01);
+    //ADC_config(0x01);
     dato = 0;
     //*************************************************************************
     // Loop infinito
     //*************************************************************************
     while(1){
-        PORTD = SERVO;
+        //PORTD = SERVO;
         CCPR1L = SERVO;  //asigno el valor para el PWM
         __delay_ms(1);             
         
